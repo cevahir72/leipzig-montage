@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { useRef } from "react";
 import SlideIn from "@/components/SlideIn";
+import Navbar from "@/components/Navbar";
 
 export default function Gallery() {
   const paxRef = useRef<HTMLDivElement>(null);
@@ -24,49 +25,7 @@ export default function Gallery() {
 
   return (
     <>
-      <header className="w-full top-0 sticky z-50 bg-surface border-b border-outline-variant shadow-sm">
-        <nav className="flex justify-between items-center max-w-[1200px] mx-auto px-gutter py-4">
-          <div className="font-headline-md text-headline-md font-bold text-primary">Leipzig Montage</div>
-          <div className="hidden md:flex items-center gap-8">
-            <Link
-              className="text-on-surface-variant hover:text-primary transition-colors duration-200 font-body-md text-body-md"
-              href="/"
-            >
-              Home
-            </Link>
-            <a
-              className="text-on-surface-variant hover:text-primary transition-colors duration-200 font-body-md text-body-md"
-              href="#"
-            >
-              Services
-            </a>
-            <Link
-              className="text-primary font-bold border-b-2 border-primary pb-1 font-body-md text-body-md"
-              href="/gallery"
-            >
-              Gallery
-            </Link>
-            <a
-              className="text-on-surface-variant hover:text-primary transition-colors duration-200 font-body-md text-body-md"
-              href="#"
-            >
-              Pricing
-            </a>
-            <a
-              className="text-on-surface-variant hover:text-primary transition-colors duration-200 font-body-md text-body-md"
-              href="#"
-            >
-              Contact
-            </a>
-            <button className="bg-primary text-on-primary px-6 py-2 rounded-lg font-bold hover:bg-primary-container transition-all active:opacity-80">
-              Book Now
-            </button>
-          </div>
-          <button className="md:hidden text-primary">
-            <span className="material-symbols-outlined">menu</span>
-          </button>
-        </nav>
-      </header>
+      <Navbar />
 
       <main className="flex-grow">
         <section className="py-16 bg-surface-container-low">

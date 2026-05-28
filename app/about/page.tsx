@@ -2,56 +2,13 @@
 
 import Link from "next/link";
 import SlideIn from "@/components/SlideIn";
+import Navbar from "@/components/Navbar";
 
 export default function About() {
 
   return (
     <>
-      <nav className="bg-surface border-b border-outline-variant z-50 sticky h-20">
-        <div className="flex justify-between items-center px-gutter max-w-[1200px] mx-auto h-full">
-          <div className="text-headline-md font-headline-md font-bold text-primary">
-            Leipzig Montage Profis
-          </div>
-          <div className="hidden md:flex items-center gap-8">
-            <Link
-              className="font-body-md text-on-surface-variant hover:text-primary transition-colors"
-              href="/"
-            >
-              Home
-            </Link>
-            <a
-              className="font-body-md text-on-surface-variant hover:text-primary transition-colors"
-              href="#"
-            >
-              Services
-            </a>
-            <Link
-              className="font-body-md text-primary font-bold border-b-2 border-primary pb-1"
-              href="/about"
-            >
-              About Us
-            </Link>
-            <a
-              className="font-body-md text-on-surface-variant hover:text-primary transition-colors"
-              href="#"
-            >
-              Portfolio
-            </a>
-            <Link
-              className="font-body-md text-on-surface-variant hover:text-primary transition-colors"
-              href="/contact"
-            >
-              Contact
-            </Link>
-            <button className="bg-primary text-on-primary px-6 py-3 font-bold hover:bg-primary-container transition-all active:opacity-80">
-              Book Now
-            </button>
-          </div>
-          <button className="md:hidden p-2 text-primary">
-            <span className="material-symbols-outlined">menu</span>
-          </button>
-        </div>
-      </nav>
+      <Navbar />
 
       <main>
         <section className="relative h-[600px] flex items-center overflow-hidden">

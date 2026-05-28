@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { useState } from "react";
 import SlideIn from "@/components/SlideIn";
+import Navbar from "@/components/Navbar";
 
 function StepperDot({
   step,
@@ -72,34 +73,7 @@ export default function Contact() {
 
   return (
     <>
-      <nav className="fixed top-0 w-full z-50 bg-surface border-b border-outline-variant flex justify-between items-center px-margin-mobile md:px-0 max-w-[1200px] mx-auto inset-x-0 h-16">
-        <Link href="/" className="font-headline-md text-headline-md font-bold text-primary">
-          Leipzig Montage Profis
-        </Link>
-        <div className="hidden md:flex gap-8 items-center">
-          <a className="text-secondary font-body-md hover:text-primary transition-colors" href="#">
-            Leistungen
-          </a>
-          <a className="text-secondary font-body-md hover:text-primary transition-colors" href="#">
-            Ablauf
-          </a>
-          <a className="text-secondary font-body-md hover:text-primary transition-colors" href="#">
-            Gewerbe
-          </a>
-          <Link
-            className="text-primary font-bold border-b-2 border-primary pb-1 font-body-md"
-            href="/contact"
-          >
-            Kontakt
-          </Link>
-          <button className="bg-primary text-on-primary px-6 py-2 rounded-lg font-label-caps hover:bg-primary-container transition-all active:scale-95">
-            JETZT BUCHEN
-          </button>
-        </div>
-        <button className="md:hidden text-primary">
-          <span className="material-symbols-outlined">menu</span>
-        </button>
-      </nav>
+      <Navbar />
 
       <header className="pt-32 pb-16 px-margin-mobile md:px-0 max-w-[1200px] mx-auto text-center">
         <span className="inline-block py-1 px-3 bg-secondary-container text-on-secondary-container rounded-full font-label-caps mb-4">

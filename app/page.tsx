@@ -1,9 +1,11 @@
 "use client";
 
 import Link from "next/link";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import LogoSlider from "@/components/LogoSlider";
 import SlideIn from "@/components/SlideIn";
+import RelatedTopics from "@/components/RelatedTopics";
+import Navbar from "@/components/Navbar";
 
 export default function Home() {
   useEffect(() => {
@@ -44,24 +46,7 @@ export default function Home() {
 
   return (
     <>
-      <header className="bg-surface sticky top-0 z-50 border-b border-outline-variant">
-        <nav className="flex justify-between items-center h-16 max-w-[1200px] mx-auto px-margin-mobile md:px-0">
-          <div className="font-headline-md text-headline-md font-bold text-primary">
-            Leipzig Montage Profis
-          </div>
-          <div className="hidden md:flex items-center gap-8 font-body-md text-body-md">
-            <a className="text-primary font-bold border-b-2 border-primary pb-1" href="#">Leistungen</a>
-            <a className="text-secondary hover:text-primary transition-colors" href="#">Ablauf</a>
-            <a className="text-secondary hover:text-primary transition-colors" href="#">Gewerbe</a>
-            <Link className="text-secondary hover:text-primary transition-colors" href="/about">About Us</Link>
-            <Link className="text-secondary hover:text-primary transition-colors" href="/gallery">Galeri</Link>
-            <Link className="text-secondary hover:text-primary transition-colors" href="/contact">Kontakt</Link>
-          </div>
-          <Link href="/contact" className="bg-primary text-on-primary px-6 py-2 rounded-lg font-bold hover:bg-primary-container transition-colors scale-98 active:opacity-80">
-            Jetzt Buchen
-          </Link>
-        </nav>
-      </header>
+      <Navbar />
 
       <main className="flex-grow">
         <section className="relative h-[600px] flex items-center overflow-hidden">
@@ -115,34 +100,34 @@ export default function Home() {
             </div>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-gutter">
               <SlideIn direction="left" delay={0}>
-                <div className="bg-white border border-outline-variant p-8 group hover:shadow-xl transition-all duration-300 flex flex-col">
+                <Link href="/montage" className="bg-white border border-outline-variant p-8 group hover:shadow-xl transition-all duration-300 flex flex-col">
                   <span className="material-symbols-outlined text-primary text-4xl mb-6">chair</span>
                   <h3 className="font-headline-md text-headline-md mb-4">Mobilya Montajı</h3>
                   <p className="text-secondary mb-6 flex-grow">IKEA, POCO, Höffner gibi tüm markaların profesyonel ve milimetrik hassasiyetle montajı.</p>
                   <span className="text-primary font-bold inline-flex items-center gap-2 group-hover:translate-x-2 transition-transform cursor-pointer">
                     Hemen Başla <span className="material-symbols-outlined text-sm">arrow_forward</span>
                   </span>
-                </div>
+                </Link>
               </SlideIn>
               <SlideIn direction="up" delay={0.1}>
-                <div className="bg-white border border-outline-variant p-8 group hover:shadow-xl transition-all duration-300 flex flex-col">
+                <Link href="/kitchen" className="bg-white border border-outline-variant p-8 group hover:shadow-xl transition-all duration-300 flex flex-col">
                   <span className="material-symbols-outlined text-primary text-4xl mb-6">countertops</span>
                   <h3 className="font-headline-md text-headline-md mb-4">Mutfak Montajı</h3>
                   <p className="text-secondary mb-6 flex-grow">Tüm mutfak üniteleri, ankastre cihazlar ve su bağlantıları dahil teknik yetkinlik ve tam kurulum.</p>
                   <span className="text-primary font-bold inline-flex items-center gap-2 group-hover:translate-x-2 transition-transform cursor-pointer">
                     Hemen Başla <span className="material-symbols-outlined text-sm">arrow_forward</span>
                   </span>
-                </div>
+                </Link>
               </SlideIn>
               <SlideIn direction="right" delay={0.2}>
-                <div className="bg-white border border-outline-variant p-8 group hover:shadow-xl transition-all duration-300 flex flex-col">
+                <Link href="/office" className="bg-white border border-outline-variant p-8 group hover:shadow-xl transition-all duration-300 flex flex-col">
                   <span className="material-symbols-outlined text-primary text-4xl mb-6">business</span>
                   <h3 className="font-headline-md text-headline-md mb-4">Ofis ve Ticari Alan</h3>
                   <p className="text-secondary mb-6 flex-grow">İşletmeniz için verimli, ergonomik ve kurumsal ofis mobilyası kurulum çözümleri.</p>
                   <span className="text-primary font-bold inline-flex items-center gap-2 group-hover:translate-x-2 transition-transform cursor-pointer">
                     Hemen Başla <span className="material-symbols-outlined text-sm">arrow_forward</span>
                   </span>
-                </div>
+                </Link>
               </SlideIn>
               <SlideIn direction="left" delay={0.3}>
                 <div className="bg-white border border-outline-variant p-8 group hover:shadow-xl transition-all duration-300 flex flex-col md:col-start-1 md:col-end-2 lg:col-start-auto lg:col-end-auto">
@@ -194,6 +179,8 @@ export default function Home() {
             </div>
           </div>
         </section>
+
+        <RelatedTopics />
 
         <section className="py-24 bg-white">
           <div className="max-w-[1200px] mx-auto px-margin-mobile md:px-0">
