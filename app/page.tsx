@@ -54,7 +54,7 @@ export default function Home() {
             <img
               alt="Professional furniture assembly"
               className="w-full h-full object-cover"
-              src="https://lh3.googleusercontent.com/aida-public/AB6AXuAXdwTq0HCmQTBlYDVHcPml34n0_syEO0CWxKHRppIxqfFVjADR7IhAmdOyaj_PRcvJUVQZUUqQLAiJV0WEKEp1zA9LmuXCVT034HREpI1ZwSfAN4ZQ0caeMjtdp4rPEeIGP0IX9ZjIsTcGRr_j08HHCv5oZVwYhfTxca9CAoIwy2c7hOSVjWC51bYp9_4q4e9EESAXAocK0qzQCoB7dlDrN3Cruyn1WgPUTf25UkL1Ule7RDUImiILJd8MTldL0RUPo2wjmzoXp9I"
+              src="/screen.webp"
             />
             <div className="absolute inset-0 bg-primary/40" />
           </div>
@@ -98,55 +98,51 @@ export default function Home() {
               <h2 className="font-headline-lg text-headline-lg text-primary mb-4">Hizmetlerimiz</h2>
               <p className="text-secondary max-w-2xl mx-auto">Her türlü mobilya montajı için hassas çözümler sunuyoruz.</p>
             </div>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-gutter">
-              <SlideIn direction="left" delay={0}>
-                <Link href="/montage" className="bg-white border border-outline-variant p-8 group hover:shadow-xl transition-all duration-300 flex flex-col">
-                  <span className="material-symbols-outlined text-primary text-4xl mb-6">chair</span>
-                  <h3 className="font-headline-md text-headline-md mb-4">Mobilya Montajı</h3>
-                  <p className="text-secondary mb-6 flex-grow">IKEA, POCO, Höffner gibi tüm markaların profesyonel ve milimetrik hassasiyetle montajı.</p>
-                  <span className="text-primary font-bold inline-flex items-center gap-2 group-hover:translate-x-2 transition-transform cursor-pointer">
-                    Hemen Başla <span className="material-symbols-outlined text-sm">arrow_forward</span>
-                  </span>
-                </Link>
-              </SlideIn>
-              <SlideIn direction="up" delay={0.1}>
-                <Link href="/kitchen" className="bg-white border border-outline-variant p-8 group hover:shadow-xl transition-all duration-300 flex flex-col">
-                  <span className="material-symbols-outlined text-primary text-4xl mb-6">countertops</span>
-                  <h3 className="font-headline-md text-headline-md mb-4">Mutfak Montajı</h3>
-                  <p className="text-secondary mb-6 flex-grow">Tüm mutfak üniteleri, ankastre cihazlar ve su bağlantıları dahil teknik yetkinlik ve tam kurulum.</p>
-                  <span className="text-primary font-bold inline-flex items-center gap-2 group-hover:translate-x-2 transition-transform cursor-pointer">
-                    Hemen Başla <span className="material-symbols-outlined text-sm">arrow_forward</span>
-                  </span>
-                </Link>
-              </SlideIn>
-              <SlideIn direction="right" delay={0.2}>
-                <Link href="/office" className="bg-white border border-outline-variant p-8 group hover:shadow-xl transition-all duration-300 flex flex-col">
-                  <span className="material-symbols-outlined text-primary text-4xl mb-6">business</span>
-                  <h3 className="font-headline-md text-headline-md mb-4">Ofis ve Ticari Alan</h3>
-                  <p className="text-secondary mb-6 flex-grow">İşletmeniz için verimli, ergonomik ve kurumsal ofis mobilyası kurulum çözümleri.</p>
-                  <span className="text-primary font-bold inline-flex items-center gap-2 group-hover:translate-x-2 transition-transform cursor-pointer">
-                    Hemen Başla <span className="material-symbols-outlined text-sm">arrow_forward</span>
-                  </span>
-                </Link>
-              </SlideIn>
-              <SlideIn direction="left" delay={0.3}>
-                <div className="bg-white border border-outline-variant p-8 group hover:shadow-xl transition-all duration-300 flex flex-col md:col-start-1 md:col-end-2 lg:col-start-auto lg:col-end-auto">
-                  <span className="material-symbols-outlined text-primary text-4xl mb-6">swap_horiz</span>
-                  <h3 className="font-headline-md text-headline-md mb-4">Demontaj &amp; Kurulum</h3>
-                  <p className="text-secondary mb-6 flex-grow">Taşınma öncesi mobilyalarınızın sökümü ve yeni adreste tekrar profesyonel montajı.</p>
-                  <span className="text-primary font-bold inline-flex items-center gap-2 group-hover:translate-x-2 transition-transform cursor-pointer">
-                    Hemen Başla <span className="material-symbols-outlined text-sm">arrow_forward</span>
-                  </span>
+            <div className="grid grid-cols-1 md:grid-cols-4 md:grid-rows-2 gap-gutter h-auto md:h-[600px]">
+              <SlideIn direction="left" delay={0} className="md:col-span-2 md:row-span-2">
+                <div className="bg-white border border-outline-variant p-8 group hover:shadow-xl transition-all duration-300 flex flex-col h-full">
+                  <img
+                    alt="IKEA Montajı"
+                    className="w-full h-64 object-cover mb-8"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuBXXZ5wqwAGos9JIxNCrK79kl68kjdQF3gtSdMlPvJ8FucKxG87n0-Qi_Nl4-Ne1q0o5sUZMZe3V_mS-2VVxdkn0HqFlWzIo4sA_u5XJ9mvESnzuNcx0AtigGTcZci2_679Q97fjwA-OVtsNUsnddODkgQ1zJVT34K5yjbjRnD9BacNFqNPl-eTv4U_SMwnhF3yR3DjeZ5TRQWiOWMu2OcS9oYHpCA97D1BgUzlASn5CWYgL_enzgyAEt_2OwpdxcrhYYw6tYtcYxI"
+                  />
+                  <div className="mt-auto">
+                    <span className="bg-surface-container text-primary font-bold px-3 py-1 text-sm rounded mb-4 inline-block">Popüler Hizmet</span>
+                    <h3 className="font-headline-lg text-headline-lg mb-4">IKEA Montajı</h3>
+                    <p className="text-secondary mb-6">Pax dolaplardan Pax sistemlerine kadar her türlü IKEA mobilyasının hızlı ve kusursuz kurulumu.</p>
+                    <span className="text-primary font-bold inline-flex items-center gap-2 group-hover:translate-x-2 transition-transform">
+                      Detayları Gör <span className="material-symbols-outlined">arrow_forward</span>
+                    </span>
+                  </div>
                 </div>
               </SlideIn>
-              <SlideIn direction="right" delay={0.4}>
-                <div className="bg-white border border-outline-variant p-8 group hover:shadow-xl transition-all duration-300 flex flex-col md:col-start-2 md:col-end-3 lg:col-start-auto lg:col-end-auto">
-                  <span className="material-symbols-outlined text-primary text-4xl mb-6">construction</span>
-                  <h3 className="font-headline-md text-headline-md mb-4">Tamirat &amp; Ayarlama</h3>
-                  <p className="text-secondary mb-6 flex-grow">Kapak ayarları, menteşe değişimi ve küçük mobilya onarımları ile mobilyalarınıza yeni hayat veriyoruz.</p>
-                  <span className="text-primary font-bold inline-flex items-center gap-2 group-hover:translate-x-2 transition-transform cursor-pointer">
-                    Hemen Başla <span className="material-symbols-outlined text-sm">arrow_forward</span>
-                  </span>
+              <SlideIn direction="up" delay={0.1} className="md:col-span-2">
+                <div className="bg-white border border-outline-variant p-8 flex items-center gap-8 group hover:shadow-xl transition-all duration-300 h-full">
+                  <div className="flex-1">
+                    <h3 className="font-headline-md text-headline-md mb-2">Mutfak Kurulumu</h3>
+                    <p className="text-secondary text-sm">Tüm mutfak ünitelerinin montajı ve ankastre cihazların yerleşimi.</p>
+                  </div>
+                  <div className="w-32 h-32 flex-shrink-0">
+                    <img
+                      alt="Mutfak"
+                      className="w-full h-full object-cover rounded shadow-sm"
+                      src="https://lh3.googleusercontent.com/aida-public/AB6AXuAY-Qh5a4-896u0f9Azl3-b5DFC0J9SEV4XLud1lgiSxThQmMM_dxWw9xltPMJEEkyg-kJH50RUD6DMCLCxHzGdXSvpQ33lQkU3hzahO4AduxLNUaowGzyswrZxP_UOotUI1lZhDwFym6YR2WIUZZtB0KV7wz5bs38T-DJaYgGh1GzMYFb59dnDY7IkLiudEoYh8Ju1oN-amrJy-CccDGIoNIe4s4Va097xxLK64SwCeHNtB9-r0lkhDdCEaySp-6NenP-J28iRmI8"
+                    />
+                  </div>
+                </div>
+              </SlideIn>
+              <SlideIn direction="right" delay={0.2}>
+                <div className="bg-white border border-outline-variant p-8 group hover:shadow-xl transition-all duration-300 h-full">
+                  <span className="material-symbols-outlined text-primary text-4xl mb-4">business_center</span>
+                  <h3 className="font-headline-md text-headline-md mb-2">Ofis Mobilyaları</h3>
+                  <p className="text-secondary text-sm">Verimli çalışma alanları için kurumsal mobilya kurulumları.</p>
+                </div>
+              </SlideIn>
+              <SlideIn direction="up" delay={0.3}>
+                <div className="bg-white border border-outline-variant p-8 group hover:shadow-xl transition-all duration-300 h-full">
+                  <span className="material-symbols-outlined text-primary text-4xl mb-4">dresser</span>
+                  <h3 className="font-headline-md text-headline-md mb-2">Dolap &amp; Gardırop</h3>
+                  <p className="text-secondary text-sm">Geniş depolama sistemlerinin güvenli ve dengeli kurulumu.</p>
                 </div>
               </SlideIn>
             </div>
@@ -182,71 +178,70 @@ export default function Home() {
 
         <RelatedTopics />
 
-        <section className="py-24 bg-white">
+        <section className="py-24 bg-white border-t border-outline-variant">
           <div className="max-w-[1200px] mx-auto px-margin-mobile md:px-0">
             <div className="text-center mb-16">
-              <h2 className="font-headline-lg text-headline-lg text-primary mb-4">Müşteri Ne Diyor?</h2>
-              <p className="text-secondary">Müşterilerimizin Leipzig mobilya montaj hizmetimiz hakkındaki deneyimleri.</p>
+              <h2 className="font-headline-lg text-headline-lg text-primary mb-4">Hizmet Bölgelerimiz</h2>
+              <p className="text-secondary max-w-2xl mx-auto">Merkezimiz Leipzig olmak üzere, geniş bir ağda profesyonel montaj hizmeti sunuyoruz.</p>
             </div>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <SlideIn direction="up" delay={0} className="mb-12 flex justify-center">
+              <div className="relative w-full max-w-3xl mx-auto rounded-xl overflow-hidden border border-outline-variant shadow-lg bg-surface-container-low p-2 md:p-4">
+                <img
+                  src="/map.png"
+                  alt="Leipzig ve çevre hizmet bölgeleri haritası"
+                  className="w-full h-auto object-contain rounded-lg"
+                />
+              </div>
+            </SlideIn>
+            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6 mb-16">
               <SlideIn direction="left" delay={0}>
-                <div className="bg-surface-container-low p-8 border border-outline-variant rounded-lg">
-                  <div className="flex text-primary mb-4">
-                    <span className="material-symbols-outlined" style={{ fontVariationSettings: "'FILL' 1" }}>star</span>
-                    <span className="material-symbols-outlined" style={{ fontVariationSettings: "'FILL' 1" }}>star</span>
-                    <span className="material-symbols-outlined" style={{ fontVariationSettings: "'FILL' 1" }}>star</span>
-                    <span className="material-symbols-outlined" style={{ fontVariationSettings: "'FILL' 1" }}>star</span>
-                    <span className="material-symbols-outlined" style={{ fontVariationSettings: "'FILL' 1" }}>star</span>
-                  </div>
-                  <p className="italic text-on-surface-variant mb-6">&quot;IKEA Pax dolabımın montajı için yardım aldım. Çok profesyonel bir ekipti, tam zamanında geldiler ve kurulum kusursuz oldu. Teşekkürler!&quot;</p>
-                  <div className="flex items-center gap-3">
-                    <div className="w-10 h-10 rounded-full bg-primary-container flex items-center justify-center text-on-primary-container font-bold">A</div>
-                    <div>
-                      <p className="font-bold text-primary">Ahmet Y.</p>
-                      <p className="text-sm text-secondary">Leipzig Zentrum</p>
-                    </div>
-                  </div>
+                <div className="flex flex-col items-center p-6 bg-surface-container-low border border-outline-variant rounded-lg hover:border-primary transition-colors">
+                  <span className="material-symbols-outlined text-primary mb-2">location_on</span>
+                  <span className="font-bold text-primary text-center">Leipzig (Merkez)</span>
                 </div>
               </SlideIn>
-              <SlideIn direction="up" delay={0.1}>
-                <div className="bg-surface-container-low p-8 border border-outline-variant rounded-lg">
-                  <div className="flex text-primary mb-4">
-                    <span className="material-symbols-outlined" style={{ fontVariationSettings: "'FILL' 1" }}>star</span>
-                    <span className="material-symbols-outlined" style={{ fontVariationSettings: "'FILL' 1" }}>star</span>
-                    <span className="material-symbols-outlined" style={{ fontVariationSettings: "'FILL' 1" }}>star</span>
-                    <span className="material-symbols-outlined" style={{ fontVariationSettings: "'FILL' 1" }}>star</span>
-                    <span className="material-symbols-outlined" style={{ fontVariationSettings: "'FILL' 1" }}>star</span>
-                  </div>
-                  <p className="italic text-on-surface-variant mb-6">&quot;Yeni taşındığım evimin tüm mutfak kurulumunu yaptılar. Sabit fiyat garantisi vermeleri harika, sonradan sürpriz yaşamadık. Tavsiye ederim.&quot;</p>
-                  <div className="flex items-center gap-3">
-                    <div className="w-10 h-10 rounded-full bg-primary-container flex items-center justify-center text-on-primary-container font-bold">M</div>
-                    <div>
-                      <p className="font-bold text-primary">Merve S.</p>
-                      <p className="text-sm text-secondary">Grünau</p>
-                    </div>
-                  </div>
+              <SlideIn direction="right" delay={0.05}>
+                <div className="flex flex-col items-center p-6 bg-surface-container-low border border-outline-variant rounded-lg hover:border-primary transition-colors">
+                  <span className="material-symbols-outlined text-primary mb-2">location_on</span>
+                  <span className="font-bold text-primary text-center">Halle (Saale)</span>
                 </div>
               </SlideIn>
-              <SlideIn direction="right" delay={0.2}>
-                <div className="bg-surface-container-low p-8 border border-outline-variant rounded-lg">
-                  <div className="flex text-primary mb-4">
-                    <span className="material-symbols-outlined" style={{ fontVariationSettings: "'FILL' 1" }}>star</span>
-                    <span className="material-symbols-outlined" style={{ fontVariationSettings: "'FILL' 1" }}>star</span>
-                    <span className="material-symbols-outlined" style={{ fontVariationSettings: "'FILL' 1" }}>star</span>
-                    <span className="material-symbols-outlined" style={{ fontVariationSettings: "'FILL' 1" }}>star</span>
-                    <span className="material-symbols-outlined" style={{ fontVariationSettings: "'FILL' 1" }}>star</span>
-                  </div>
-                  <p className="italic text-on-surface-variant mb-6">&quot;Ofis mobilyalarımızın montajı çok hızlı bitti. İşlerini gerçekten temiz ve titiz yapıyorlar. Fiyat/performans açısından 10 numara.&quot;</p>
-                  <div className="flex items-center gap-3">
-                    <div className="w-10 h-10 rounded-full bg-primary-container flex items-center justify-center text-on-primary-container font-bold">C</div>
-                    <div>
-                      <p className="font-bold text-primary">Can K.</p>
-                      <p className="text-sm text-secondary">Connewitz</p>
-                    </div>
-                  </div>
+              <SlideIn direction="left" delay={0.1}>
+                <div className="flex flex-col items-center p-6 bg-surface-container-low border border-outline-variant rounded-lg hover:border-primary transition-colors">
+                  <span className="material-symbols-outlined text-primary mb-2">location_on</span>
+                  <span className="font-bold text-primary text-center">Chemnitz</span>
+                </div>
+              </SlideIn>
+              <SlideIn direction="right" delay={0.15}>
+                <div className="flex flex-col items-center p-6 bg-surface-container-low border border-outline-variant rounded-lg hover:border-primary transition-colors">
+                  <span className="material-symbols-outlined text-primary mb-2">location_on</span>
+                  <span className="font-bold text-primary text-center">Jena</span>
+                </div>
+              </SlideIn>
+              <SlideIn direction="left" delay={0.2}>
+                <div className="flex flex-col items-center p-6 bg-surface-container-low border border-outline-variant rounded-lg hover:border-primary transition-colors">
+                  <span className="material-symbols-outlined text-primary mb-2">location_on</span>
+                  <span className="font-bold text-primary text-center">Naumburg</span>
+                </div>
+              </SlideIn>
+              <SlideIn direction="right" delay={0.25}>
+                <div className="flex flex-col items-center p-6 bg-surface-container-low border border-outline-variant rounded-lg hover:border-primary transition-colors">
+                  <span className="material-symbols-outlined text-primary mb-2">location_on</span>
+                  <span className="font-bold text-primary text-center">Gera</span>
                 </div>
               </SlideIn>
             </div>
+            <SlideIn direction="up" delay={0.1}>
+              <div className="bg-primary text-white p-8 md:p-12 rounded-xl flex flex-col md:flex-row items-center gap-8">
+                <div className="bg-white/10 p-4 rounded-full">
+                  <span className="material-symbols-outlined text-5xl">near_me</span>
+                </div>
+                <div>
+                  <h3 className="font-headline-md text-headline-md mb-2 text-primary-fixed">Bölgesel Yakınlık: Hızlı Randevu ve Kişisel Destek</h3>
+                  <p className="font-body-lg opacity-90">Bölgesel yakınlığımız sayesinde size en hızlı şekilde ulaşıyor, mobilya kurulum süreçlerinizi kişisel destek ile kolaylaştırıyoruz.</p>
+                </div>
+              </div>
+            </SlideIn>
           </div>
         </section>
 
@@ -367,70 +362,71 @@ export default function Home() {
         </section>
       </main>
 
-      <section className="py-24 bg-white border-t border-outline-variant">
+      <section className="py-24 bg-white">
         <div className="max-w-[1200px] mx-auto px-margin-mobile md:px-0">
           <div className="text-center mb-16">
-            <h2 className="font-headline-lg text-headline-lg text-primary mb-4">Hizmet Bölgelerimiz</h2>
-            <p className="text-secondary max-w-2xl mx-auto">Merkezimiz Leipzig olmak üzere, geniş bir ağda profesyonel montaj hizmeti sunuyoruz.</p>
+            <h2 className="font-headline-lg text-headline-lg text-primary mb-4">Müşteri Ne Diyor?</h2>
+            <p className="text-secondary">Müşterilerimizin Leipzig mobilya montaj hizmetimiz hakkındaki deneyimleri.</p>
           </div>
-          <SlideIn direction="up" delay={0} className="mb-12 flex justify-center">
-            <div className="relative w-full max-w-3xl mx-auto rounded-xl overflow-hidden border border-outline-variant shadow-lg bg-surface-container-low p-2 md:p-4">
-              <img
-                src="/map.png"
-                alt="Leipzig ve çevre hizmet bölgeleri haritası"
-                className="w-full h-auto object-contain rounded-lg"
-              />
-            </div>
-          </SlideIn>
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6 mb-16">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <SlideIn direction="left" delay={0}>
-              <div className="flex flex-col items-center p-6 bg-surface-container-low border border-outline-variant rounded-lg hover:border-primary transition-colors">
-                <span className="material-symbols-outlined text-primary mb-2">location_on</span>
-                <span className="font-bold text-primary text-center">Leipzig (Merkez)</span>
+              <div className="bg-surface-container-low p-8 border border-outline-variant rounded-lg">
+                <div className="flex text-primary mb-4">
+                  <span className="material-symbols-outlined" style={{ fontVariationSettings: "'FILL' 1" }}>star</span>
+                  <span className="material-symbols-outlined" style={{ fontVariationSettings: "'FILL' 1" }}>star</span>
+                  <span className="material-symbols-outlined" style={{ fontVariationSettings: "'FILL' 1" }}>star</span>
+                  <span className="material-symbols-outlined" style={{ fontVariationSettings: "'FILL' 1" }}>star</span>
+                  <span className="material-symbols-outlined" style={{ fontVariationSettings: "'FILL' 1" }}>star</span>
+                </div>
+                <p className="italic text-on-surface-variant mb-6">&quot;IKEA Pax dolabımın montajı için yardım aldım. Çok profesyonel bir ekipti, tam zamanında geldiler ve kurulum kusursuz oldu. Teşekkürler!&quot;</p>
+                <div className="flex items-center gap-3">
+                  <div className="w-10 h-10 rounded-full bg-primary-container flex items-center justify-center text-on-primary-container font-bold">A</div>
+                  <div>
+                    <p className="font-bold text-primary">Ahmet Y.</p>
+                    <p className="text-sm text-secondary">Leipzig Zentrum</p>
+                  </div>
+                </div>
               </div>
             </SlideIn>
-            <SlideIn direction="right" delay={0.05}>
-              <div className="flex flex-col items-center p-6 bg-surface-container-low border border-outline-variant rounded-lg hover:border-primary transition-colors">
-                <span className="material-symbols-outlined text-primary mb-2">location_on</span>
-                <span className="font-bold text-primary text-center">Halle (Saale)</span>
+            <SlideIn direction="up" delay={0.1}>
+              <div className="bg-surface-container-low p-8 border border-outline-variant rounded-lg">
+                <div className="flex text-primary mb-4">
+                  <span className="material-symbols-outlined" style={{ fontVariationSettings: "'FILL' 1" }}>star</span>
+                  <span className="material-symbols-outlined" style={{ fontVariationSettings: "'FILL' 1" }}>star</span>
+                  <span className="material-symbols-outlined" style={{ fontVariationSettings: "'FILL' 1" }}>star</span>
+                  <span className="material-symbols-outlined" style={{ fontVariationSettings: "'FILL' 1" }}>star</span>
+                  <span className="material-symbols-outlined" style={{ fontVariationSettings: "'FILL' 1" }}>star</span>
+                </div>
+                <p className="italic text-on-surface-variant mb-6">&quot;Yeni taşındığım evimin tüm mutfak kurulumunu yaptılar. Sabit fiyat garantisi vermeleri harika, sonradan sürpriz yaşamadık. Tavsiye ederim.&quot;</p>
+                <div className="flex items-center gap-3">
+                  <div className="w-10 h-10 rounded-full bg-primary-container flex items-center justify-center text-on-primary-container font-bold">M</div>
+                  <div>
+                    <p className="font-bold text-primary">Merve S.</p>
+                    <p className="text-sm text-secondary">Grünau</p>
+                  </div>
+                </div>
               </div>
             </SlideIn>
-            <SlideIn direction="left" delay={0.1}>
-              <div className="flex flex-col items-center p-6 bg-surface-container-low border border-outline-variant rounded-lg hover:border-primary transition-colors">
-                <span className="material-symbols-outlined text-primary mb-2">location_on</span>
-                <span className="font-bold text-primary text-center">Chemnitz</span>
-              </div>
-            </SlideIn>
-            <SlideIn direction="right" delay={0.15}>
-              <div className="flex flex-col items-center p-6 bg-surface-container-low border border-outline-variant rounded-lg hover:border-primary transition-colors">
-                <span className="material-symbols-outlined text-primary mb-2">location_on</span>
-                <span className="font-bold text-primary text-center">Jena</span>
-              </div>
-            </SlideIn>
-            <SlideIn direction="left" delay={0.2}>
-              <div className="flex flex-col items-center p-6 bg-surface-container-low border border-outline-variant rounded-lg hover:border-primary transition-colors">
-                <span className="material-symbols-outlined text-primary mb-2">location_on</span>
-                <span className="font-bold text-primary text-center">Naumburg</span>
-              </div>
-            </SlideIn>
-            <SlideIn direction="right" delay={0.25}>
-              <div className="flex flex-col items-center p-6 bg-surface-container-low border border-outline-variant rounded-lg hover:border-primary transition-colors">
-                <span className="material-symbols-outlined text-primary mb-2">location_on</span>
-                <span className="font-bold text-primary text-center">Gera</span>
+            <SlideIn direction="right" delay={0.2}>
+              <div className="bg-surface-container-low p-8 border border-outline-variant rounded-lg">
+                <div className="flex text-primary mb-4">
+                  <span className="material-symbols-outlined" style={{ fontVariationSettings: "'FILL' 1" }}>star</span>
+                  <span className="material-symbols-outlined" style={{ fontVariationSettings: "'FILL' 1" }}>star</span>
+                  <span className="material-symbols-outlined" style={{ fontVariationSettings: "'FILL' 1" }}>star</span>
+                  <span className="material-symbols-outlined" style={{ fontVariationSettings: "'FILL' 1" }}>star</span>
+                  <span className="material-symbols-outlined" style={{ fontVariationSettings: "'FILL' 1" }}>star</span>
+                </div>
+                <p className="italic text-on-surface-variant mb-6">&quot;Ofis mobilyalarımızın montajı çok hızlı bitti. İşlerini gerçekten temiz ve titiz yapıyorlar. Fiyat/performans açısından 10 numara.&quot;</p>
+                <div className="flex items-center gap-3">
+                  <div className="w-10 h-10 rounded-full bg-primary-container flex items-center justify-center text-on-primary-container font-bold">C</div>
+                  <div>
+                    <p className="font-bold text-primary">Can K.</p>
+                    <p className="text-sm text-secondary">Connewitz</p>
+                  </div>
+                </div>
               </div>
             </SlideIn>
           </div>
-          <SlideIn direction="up" delay={0.1}>
-            <div className="bg-primary text-white p-8 md:p-12 rounded-xl flex flex-col md:flex-row items-center gap-8">
-              <div className="bg-white/10 p-4 rounded-full">
-                <span className="material-symbols-outlined text-5xl">near_me</span>
-              </div>
-              <div>
-                <h3 className="font-headline-md text-headline-md mb-2 text-primary-fixed">Bölgesel Yakınlık: Hızlı Randevu ve Kişisel Destek</h3>
-                <p className="font-body-lg opacity-90">Bölgesel yakınlığımız sayesinde size en hızlı şekilde ulaşıyor, mobilya kurulum süreçlerinizi kişisel destek ile kolaylaştırıyoruz.</p>
-              </div>
-            </div>
-          </SlideIn>
         </div>
       </section>
 
