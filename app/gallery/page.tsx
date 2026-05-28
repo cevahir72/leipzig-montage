@@ -4,6 +4,7 @@ import Link from "next/link";
 import { useRef } from "react";
 import SlideIn from "@/components/SlideIn";
 import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
 
 export default function Gallery() {
   const paxRef = useRef<HTMLDivElement>(null);
@@ -248,51 +249,14 @@ export default function Gallery() {
                 </div>
               </SlideIn>
             </div>
-            <button className="bg-white text-primary px-10 py-4 rounded-lg font-bold text-lg hover:bg-surface-container-highest transition-all shadow-xl">
+            <Link href="/contact" className="inline-block bg-white text-primary px-10 py-4 rounded-lg font-bold text-lg hover:bg-surface-container-highest transition-all shadow-xl">
               Kostenloses Angebot einholen
-            </button>
+            </Link>
           </div>
         </section>
       </main>
 
-      <footer className="w-full mt-auto bg-surface-container-highest border-t border-outline-variant">
-        <div className="flex flex-col md:flex-row justify-between items-center max-w-[1200px] mx-auto px-gutter py-8">
-          <div className="mb-4 md:mb-0">
-            <div className="font-headline-md text-headline-md font-bold text-primary mb-2">
-              Leipzig Montage
-            </div>
-            <p className="text-on-surface-variant font-body-md text-body-md">
-              &copy; 2024 Leipzig Montage Profis. Alle Rechte vorbehalten.
-            </p>
-          </div>
-          <div className="flex gap-6">
-            <a
-              className="text-on-surface-variant hover:underline transition-all font-body-md text-body-md"
-              href="#"
-            >
-              Impressum
-            </a>
-            <a
-              className="text-on-surface-variant hover:underline transition-all font-body-md text-body-md"
-              href="#"
-            >
-              Datenschutz
-            </a>
-            <a
-              className="text-on-surface-variant hover:underline transition-all font-body-md text-body-md"
-              href="#"
-            >
-              AGB
-            </a>
-            <a
-              className="text-on-surface-variant hover:underline transition-all font-body-md text-body-md"
-              href="#"
-            >
-              FAQ
-            </a>
-          </div>
-        </div>
-      </footer>
+      <Footer />
     </>
   );
 }

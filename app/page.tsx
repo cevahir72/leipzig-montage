@@ -6,6 +6,7 @@ import LogoSlider from "@/components/LogoSlider";
 import SlideIn from "@/components/SlideIn";
 import RelatedTopics from "@/components/RelatedTopics";
 import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
 
 export default function Home() {
   useEffect(() => {
@@ -370,7 +371,7 @@ export default function Home() {
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <SlideIn direction="left" delay={0}>
-              <div className="bg-surface-container-low p-8 border border-outline-variant rounded-lg">
+              <div className="bg-surface-container-low p-8 border border-outline-variant rounded-lg h-full flex flex-col">
                 <div className="flex text-primary mb-4">
                   <span className="material-symbols-outlined" style={{ fontVariationSettings: "'FILL' 1" }}>star</span>
                   <span className="material-symbols-outlined" style={{ fontVariationSettings: "'FILL' 1" }}>star</span>
@@ -378,7 +379,7 @@ export default function Home() {
                   <span className="material-symbols-outlined" style={{ fontVariationSettings: "'FILL' 1" }}>star</span>
                   <span className="material-symbols-outlined" style={{ fontVariationSettings: "'FILL' 1" }}>star</span>
                 </div>
-                <p className="italic text-on-surface-variant mb-6">&quot;Ich habe Hilfe bei der Montage meines IKEA Pax Schranks bekommen. Sehr professionelles Team, pünktlich gekommen und die Montage war einwandfrei. Danke!&quot;</p>
+                <p className="italic text-on-surface-variant mb-6 flex-1">&quot;Ich habe Hilfe bei der Montage meines IKEA Pax Schranks bekommen. Sehr professionelles Team, pünktlich gekommen und die Montage war einwandfrei. Danke!&quot;</p>
                 <div className="flex items-center gap-3">
                   <div className="w-10 h-10 rounded-full bg-primary-container flex items-center justify-center text-on-primary-container font-bold">A</div>
                   <div>
@@ -389,7 +390,7 @@ export default function Home() {
               </div>
             </SlideIn>
             <SlideIn direction="up" delay={0.1}>
-              <div className="bg-surface-container-low p-8 border border-outline-variant rounded-lg">
+              <div className="bg-surface-container-low p-8 border border-outline-variant rounded-lg h-full flex flex-col">
                 <div className="flex text-primary mb-4">
                   <span className="material-symbols-outlined" style={{ fontVariationSettings: "'FILL' 1" }}>star</span>
                   <span className="material-symbols-outlined" style={{ fontVariationSettings: "'FILL' 1" }}>star</span>
@@ -397,7 +398,7 @@ export default function Home() {
                   <span className="material-symbols-outlined" style={{ fontVariationSettings: "'FILL' 1" }}>star</span>
                   <span className="material-symbols-outlined" style={{ fontVariationSettings: "'FILL' 1" }}>star</span>
                 </div>
-                <p className="italic text-on-surface-variant mb-6">&quot;Sie haben die gesamte Küche in meiner neuen Wohnung montiert. Die Festpreisgarantie ist großartig, keine Überraschungen hinterher. Sehr empfehlenswert.&quot;</p>
+                <p className="italic text-on-surface-variant mb-6 flex-1">&quot;Sie haben die gesamte Küche in meiner neuen Wohnung montiert. Die Festpreisgarantie ist großartig, keine Überraschungen hinterher. Sehr empfehlenswert.&quot;</p>
                 <div className="flex items-center gap-3">
                   <div className="w-10 h-10 rounded-full bg-primary-container flex items-center justify-center text-on-primary-container font-bold">M</div>
                   <div>
@@ -408,7 +409,7 @@ export default function Home() {
               </div>
             </SlideIn>
             <SlideIn direction="right" delay={0.2}>
-              <div className="bg-surface-container-low p-8 border border-outline-variant rounded-lg">
+              <div className="bg-surface-container-low p-8 border border-outline-variant rounded-lg h-full flex flex-col">
                 <div className="flex text-primary mb-4">
                   <span className="material-symbols-outlined" style={{ fontVariationSettings: "'FILL' 1" }}>star</span>
                   <span className="material-symbols-outlined" style={{ fontVariationSettings: "'FILL' 1" }}>star</span>
@@ -416,7 +417,7 @@ export default function Home() {
                   <span className="material-symbols-outlined" style={{ fontVariationSettings: "'FILL' 1" }}>star</span>
                   <span className="material-symbols-outlined" style={{ fontVariationSettings: "'FILL' 1" }}>star</span>
                 </div>
-                <p className="italic text-on-surface-variant mb-6">&quot;Die Montage unserer Büromöbel war sehr schnell. Sie arbeiten wirklich sauber und gewissenhaft. Preis-Leistung 10/10.&quot;</p>
+                <p className="italic text-on-surface-variant mb-6 flex-1">&quot;Die Montage unserer Büromöbel war sehr schnell. Sie arbeiten wirklich sauber und gewissenhaft. Preis-Leistung 10/10.&quot;</p>
                 <div className="flex items-center gap-3">
                   <div className="w-10 h-10 rounded-full bg-primary-container flex items-center justify-center text-on-primary-container font-bold">C</div>
                   <div>
@@ -430,37 +431,7 @@ export default function Home() {
         </div>
       </section>
 
-      <footer className="bg-surface-container-highest border-t border-outline-variant">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-gutter py-12 max-w-[1200px] mx-auto px-margin-mobile md:px-0">
-          <div>
-            <div className="font-headline-md text-headline-md font-bold text-primary mb-4">
-              Leipzig Montage Profis
-            </div>
-            <p className="text-on-surface-variant max-w-sm mb-6">
-              &copy; 2024 Leipzig Montage Profis. Präzision in jedem Handgriff.
-            </p>
-            <div className="flex gap-4">
-              <a className="text-on-surface-variant hover:text-primary transition-colors" href="#">
-                <span className="material-symbols-outlined">social_leaderboard</span>
-              </a>
-              <a className="text-on-surface-variant hover:text-primary transition-colors" href="#">
-                <span className="material-symbols-outlined">share</span>
-              </a>
-            </div>
-          </div>
-          <div className="grid grid-cols-2 gap-8">
-            <div className="flex flex-col gap-3">
-              <a className="text-on-surface-variant hover:text-primary hover:underline transition-all" href="#">Impressum</a>
-              <a className="text-on-surface-variant hover:text-primary hover:underline transition-all" href="#">Datenschutz</a>
-              <a className="text-on-surface-variant hover:text-primary hover:underline transition-all" href="#">AGB</a>
-            </div>
-            <div className="flex flex-col gap-3">
-              <a className="text-on-surface-variant hover:text-primary hover:underline transition-all" href="#">Servicegebiete Leipzig</a>
-              <p className="text-sm text-secondary">Montage- und Installationslösungen</p>
-            </div>
-          </div>
-        </div>
-      </footer>
+      <Footer />
     </>
   );
 }

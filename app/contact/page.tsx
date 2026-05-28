@@ -4,6 +4,7 @@ import Link from "next/link";
 import { useState } from "react";
 import SlideIn from "@/components/SlideIn";
 import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
 
 function StepperDot({
   step,
@@ -380,47 +381,7 @@ export default function Contact() {
         </div>
       </main>
 
-      <footer className="bg-surface-container-highest border-t border-outline-variant">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 w-full py-12 px-margin-mobile md:px-0 max-w-[1200px] mx-auto">
-          <div>
-            <div className="font-headline-md text-headline-md font-bold text-primary mb-4">
-              Leipzig Montage Profis
-            </div>
-            <p className="text-secondary max-w-md">
-              Meisterhafte Montage in Sachsen.                Wir bieten professionelle Montagelösungen für Ihre Wohn- und Büromöbel.
-            </p>
-          </div>
-          <div className="grid grid-cols-2 gap-4">
-            <div className="flex flex-col gap-2">
-              <p className="font-label-caps text-primary mb-2">UNTERNEHMEN</p>
-              <a className="text-secondary hover:text-primary transition-all" href="#">
-                Impressum
-              </a>
-              <a className="text-secondary hover:text-primary transition-all" href="#">
-                Datenschutz
-              </a>
-              <a className="text-secondary hover:text-primary transition-all" href="#">
-                AGB
-              </a>
-            </div>
-            <div className="flex flex-col gap-2">
-              <p className="font-label-caps text-primary mb-2">SERVICE</p>
-              <a className="text-secondary hover:text-primary transition-all" href="#">
-                Servicegebiete
-              </a>
-              <a className="text-secondary hover:text-primary transition-all" href="#">
-                Partnerprogramm
-              </a>
-              <Link className="text-primary font-bold underline" href="/contact">
-                Schnelles Angebot
-              </Link>
-            </div>
-          </div>
-        </div>
-        <div className="border-t border-outline-variant/30 py-6 text-center text-secondary text-sm">
-          &copy; 2024 Leipzig Montage Profis. Alle Rechte vorbehalten. Meisterhafte Montage in Sachsen.
-        </div>
-      </footer>
+      <Footer />
 
       <a
         className="fixed bottom-8 right-8 z-[60] bg-[#25D366] text-white flex items-center gap-3 px-6 py-4 rounded-full shadow-2xl hover:scale-105 active:scale-95 transition-all group"

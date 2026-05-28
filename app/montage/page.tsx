@@ -3,6 +3,7 @@
 import Link from "next/link";
 import SlideIn from "@/components/SlideIn";
 import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
 
 export default function Montage() {
   return (
@@ -117,19 +118,7 @@ export default function Montage() {
         </section>
       </main>
 
-      <footer className="bg-tertiary">
-        <div className="flex flex-col md:flex-row justify-between items-center px-gutter py-12 max-w-[1200px] mx-auto">
-          <div className="mb-8 md:mb-0">
-            <div className="text-headline-md font-headline-md text-on-tertiary mb-4">Leipzig Montage Profis</div>
-            <p className="font-label-caps text-label-caps uppercase tracking-wider text-on-tertiary opacity-80">&copy; 2024 Leipzig Montage Profis. Präzision in jedem Handgriff.</p>
-          </div>
-          <div className="flex gap-8 flex-wrap justify-center">
-            <a className="font-label-caps text-label-caps uppercase tracking-wider text-on-tertiary-container opacity-80 hover:opacity-100 transition-colors" href="#">Impressum</a>
-            <a className="font-label-caps text-label-caps uppercase tracking-wider text-on-tertiary-container opacity-80 hover:opacity-100 transition-colors" href="#">Datenschutz</a>
-            <a className="font-label-caps text-label-caps uppercase tracking-wider text-on-tertiary-container opacity-80 hover:opacity-100 transition-colors" href="#">AGB</a>
-          </div>
-        </div>
-      </footer>
+      <Footer />
     </>
   );
 }

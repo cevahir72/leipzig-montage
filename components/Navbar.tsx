@@ -73,7 +73,7 @@ export default function Navbar() {
               onClick={() => setMenuOpen(false)}
             />
             <motion.div
-              className="fixed top-0 right-0 h-full w-80 max-w-[85vw] bg-surface z-50 flex flex-col shadow-2xl md:hidden"
+              className="fixed top-0 right-0 h-full w-full sm:w-80 bg-surface z-50 flex flex-col shadow-2xl md:hidden"
               initial={{ x: "100%" }}
               animate={{ x: 0 }}
               exit={{ x: "100%" }}

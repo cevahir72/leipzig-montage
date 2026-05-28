@@ -3,6 +3,7 @@
 import Link from "next/link";
 import SlideIn from "@/components/SlideIn";
 import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
 
 export default function About() {
 
@@ -142,56 +143,19 @@ export default function About() {
                 höchster Präzision umsetzen.
               </p>
               <div className="flex flex-col sm:flex-row justify-center gap-6">
-                <button className="bg-on-primary text-primary px-10 py-4 font-bold text-lg hover:bg-primary-fixed-dim transition-all">
+                <Link href="/contact" className="bg-on-primary text-primary px-10 py-4 font-bold text-lg hover:bg-primary-fixed-dim transition-all">
                   Get a Free Quote
-                </button>
-                <button className="border border-on-primary text-on-primary px-10 py-4 font-bold text-lg hover:bg-on-primary hover:text-primary transition-all">
+                </Link>
+                <Link href="/" className="border border-on-primary text-on-primary px-10 py-4 font-bold text-lg hover:bg-on-primary hover:text-primary transition-all">
                   Unsere Services
-                </button>
+                </Link>
               </div>
             </div>
           </section>
         </SlideIn>
       </main>
 
-      <footer className="bg-tertiary">
-        <div className="flex flex-col md:flex-row justify-between items-center px-gutter py-12 max-w-[1200px] mx-auto">
-          <div className="mb-8 md:mb-0">
-            <div className="text-headline-md font-headline-md text-on-tertiary mb-4">
-              Leipzig Montage Profis
-            </div>
-            <p className="font-label-caps text-label-caps uppercase tracking-wider text-on-tertiary opacity-80">
-              &copy; 2024 Leipzig Montage Profis. Handcrafted precision in every joint.
-            </p>
-          </div>
-          <div className="flex gap-8 flex-wrap justify-center">
-            <a
-              className="font-label-caps text-label-caps uppercase tracking-wider text-on-tertiary-container opacity-80 hover:opacity-100 transition-colors"
-              href="#"
-            >
-              Impressum
-            </a>
-            <a
-              className="font-label-caps text-label-caps uppercase tracking-wider text-on-tertiary-container opacity-80 hover:opacity-100 transition-colors"
-              href="#"
-            >
-              Datenschutz
-            </a>
-            <a
-              className="font-label-caps text-label-caps uppercase tracking-wider text-on-tertiary-container opacity-80 hover:opacity-100 transition-colors"
-              href="#"
-            >
-              AGB
-            </a>
-            <a
-              className="font-label-caps text-label-caps uppercase tracking-wider text-on-tertiary-container opacity-80 hover:opacity-100 transition-colors"
-              href="#"
-            >
-              Careers
-            </a>
-          </div>
-        </div>
-      </footer>
+      <Footer />
     </>
   );
 }
