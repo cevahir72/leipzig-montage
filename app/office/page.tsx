@@ -16,7 +16,7 @@ export default function Office() {
             <img
               alt="Office furniture assembly"
               className="w-full h-full object-cover"
-              src="https://lh3.googleusercontent.com/aida-public/AB6AXuCDH4tnfBGrifLs5vffyT-3V6NgZbicLEyR-kqomeY7dfymRHY1Ilr4iClX62Q2GfHm8ADfJWm5Dk-sn2Sw3lWlXA-uWuJPo-PQB-6HjouXVda1vpqxnMyDWZ02JFdRgpv3lM2Vjg5ap27I9x42w3ab4Bj_qihh1dtw5Fl2GHIa61hfth_LXBh_XxGsXMNmBfcuieycEYRJEju1rvNdEgSWiLl2y3pkymt61F6CTS2ofIryy97OsKZP1D8emYkOqdJmDBTZfXXWLzM"
+              src="/office.webp"
             />
           </div>
           <SlideIn direction="left" delay={0} className="relative z-20 max-w-[1200px] mx-auto px-gutter w-full">

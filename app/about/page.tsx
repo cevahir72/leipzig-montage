@@ -44,7 +44,7 @@ export default function About() {
                   <img
                     alt="Möbelmontage Profi in Leipzig"
                     className="relative z-10 w-full h-auto rounded-lg shadow-xl"
-                    src="https://lh3.googleusercontent.com/aida/ADBb0ugbX9U9tvXJQCo83nfR-FjJeUE2RhJRF1s4mjsxMUlbtFaoD3gRtpYnJqkIEqMojITutD5llxaX14fFfEzjLLKaTyu5ae40m9llsnuRUB0R65mZXrMSMqQqhJcSS0tUzCxQsnMb7nbOc1tuW67_wH1tlZarf4Bytdxmt_VmhrHqV-dlwvrfgAqf-fBHj9o87hj-0STBdwFLjVXEg5C4wf5Hq7bXb_IjFSKohKq6iD-3briPdRwvIuKUnQ"
+                    src="/furniture_assembly.gif"
                   />
                 </div>
               </SlideIn>

@@ -61,14 +61,14 @@ export default function Home() {
           <div className="relative z-10 max-w-[1200px] mx-auto px-margin-mobile md:px-0 w-full text-white">
             <div className="max-w-3xl">
               <h1 className="font-headline-xl-mobile md:font-headline-xl text-headline-xl-mobile md:text-headline-xl mb-6 leading-tight">
-                Leipzig&apos;de Mobilya Montajı:{" "}
-                <span className="block">Profesyonel, Hızlı ve Sabit Fiyat Garantili!</span>
+                Möbelmontage in Leipzig:{" "}
+                <span className="block">Professionell, Schnell und mit Festpreisgarantie!</span>
               </h1>
               <p className="font-body-lg text-body-lg mb-8 opacity-90 max-w-xl">
-                11 yıllık deneyim ve haftalık 7 gün ulaşılabilirlik ile Leipzig ve çevresinde mobilya kurulumunda güvenilir çözüm ortağınız.
+                Mit 11 Jahren Erfahrung und 7 Tagen die Woche erreichbar – Ihr zuverlässiger Partner für Möbelmontage in Leipzig und Umgebung.
               </p>
               <Link href="/contact" className="inline-block bg-white text-primary px-8 py-4 rounded-lg font-bold text-lg hover:bg-surface-container transition-transform active:scale-95 shadow-lg">
-                Hemen Teklif Al
+                Kostenloses Angebot
               </Link>
             </div>
           </div>
@@ -79,15 +79,15 @@ export default function Home() {
           <div className="max-w-[1200px] mx-auto px-margin-mobile md:px-0 flex flex-col md:flex-row justify-between gap-gutter">
             <div className="flex items-center gap-4">
               <span className="material-symbols-outlined text-on-primary text-3xl">verified</span>
-              <span className="font-headline-md text-headline-md text-on-primary">11 Yıllık Deneyim</span>
+              <span className="font-headline-md text-headline-md text-on-primary">11 Jahre Erfahrung</span>
             </div>
             <div className="flex items-center gap-4">
               <span className="material-symbols-outlined text-on-primary text-3xl">payments</span>
-              <span className="font-headline-md text-headline-md text-on-primary">Sabit Fiyat Garantisi</span>
+              <span className="font-headline-md text-headline-md text-on-primary">Festpreisgarantie</span>
             </div>
             <div className="flex items-center gap-4">
               <span className="material-symbols-outlined text-on-primary text-3xl">support_agent</span>
-              <span className="font-headline-md text-headline-md text-on-primary">7/24 İletişim</span>
+              <span className="font-headline-md text-headline-md text-on-primary">7/24 Erreichbar</span>
             </div>
           </div>
         </section>
@@ -95,55 +95,55 @@ export default function Home() {
         <section className="py-24 bg-surface">
           <div className="max-w-[1200px] mx-auto px-margin-mobile md:px-0">
             <div className="text-center mb-16">
-              <h2 className="font-headline-lg text-headline-lg text-primary mb-4">Hizmetlerimiz</h2>
-              <p className="text-secondary max-w-2xl mx-auto">Her türlü mobilya montajı için hassas çözümler sunuyoruz.</p>
+              <h2 className="font-headline-lg text-headline-lg text-primary mb-4">Unsere Leistungen</h2>
+              <p className="text-secondary max-w-2xl mx-auto">Präzise Lösungen für jede Art von Möbelmontage.</p>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-4 md:grid-rows-2 gap-gutter h-auto md:h-[600px]">
               <SlideIn direction="left" delay={0} className="md:col-span-2 md:row-span-2">
-                <div className="bg-white border border-outline-variant p-8 group hover:shadow-xl transition-all duration-300 flex flex-col h-full">
+                <Link href="/montage" className="bg-white border border-outline-variant p-8 group hover:shadow-xl transition-all duration-300 flex flex-col h-full cursor-pointer">
                   <img
-                    alt="IKEA Montajı"
+                    alt="IKEA Montage"
                     className="w-full h-64 object-cover mb-8"
                     src="https://lh3.googleusercontent.com/aida-public/AB6AXuBXXZ5wqwAGos9JIxNCrK79kl68kjdQF3gtSdMlPvJ8FucKxG87n0-Qi_Nl4-Ne1q0o5sUZMZe3V_mS-2VVxdkn0HqFlWzIo4sA_u5XJ9mvESnzuNcx0AtigGTcZci2_679Q97fjwA-OVtsNUsnddODkgQ1zJVT34K5yjbjRnD9BacNFqNPl-eTv4U_SMwnhF3yR3DjeZ5TRQWiOWMu2OcS9oYHpCA97D1BgUzlASn5CWYgL_enzgyAEt_2OwpdxcrhYYw6tYtcYxI"
                   />
                   <div className="mt-auto">
-                    <span className="bg-surface-container text-primary font-bold px-3 py-1 text-sm rounded mb-4 inline-block">Popüler Hizmet</span>
-                    <h3 className="font-headline-lg text-headline-lg mb-4">IKEA Montajı</h3>
-                    <p className="text-secondary mb-6">Pax dolaplardan Pax sistemlerine kadar her türlü IKEA mobilyasının hızlı ve kusursuz kurulumu.</p>
+                    <span className="bg-surface-container text-primary font-bold px-3 py-1 text-sm rounded mb-4 inline-block">Beliebter Service</span>
+                    <h3 className="font-headline-lg text-headline-lg mb-4">IKEA Montage</h3>
+                    <p className="text-secondary mb-6">Schnelle und einwandfreie Montage aller IKEA Möbel – von PAX Schränken bis zu kompletten Systemen.</p>
                     <span className="text-primary font-bold inline-flex items-center gap-2 group-hover:translate-x-2 transition-transform">
-                      Detayları Gör <span className="material-symbols-outlined">arrow_forward</span>
+                      Details ansehen <span className="material-symbols-outlined">arrow_forward</span>
                     </span>
                   </div>
-                </div>
+                </Link>
               </SlideIn>
               <SlideIn direction="up" delay={0.1} className="md:col-span-2">
-                <div className="bg-white border border-outline-variant p-8 flex items-center gap-8 group hover:shadow-xl transition-all duration-300 h-full">
+                <Link href="/kitchen" className="bg-white border border-outline-variant p-8 flex items-center gap-8 group hover:shadow-xl transition-all duration-300 h-full cursor-pointer">
                   <div className="flex-1">
-                    <h3 className="font-headline-md text-headline-md mb-2">Mutfak Kurulumu</h3>
-                    <p className="text-secondary text-sm">Tüm mutfak ünitelerinin montajı ve ankastre cihazların yerleşimi.</p>
+                    <h3 className="font-headline-md text-headline-md mb-2">Küchenmontage</h3>
+                    <p className="text-secondary text-sm">Montage aller Küchenelemente und Einbau von Elektrogeräten.</p>
                   </div>
                   <div className="w-32 h-32 flex-shrink-0">
                     <img
-                      alt="Mutfak"
+                      alt="Küche"
                       className="w-full h-full object-cover rounded shadow-sm"
                       src="https://lh3.googleusercontent.com/aida-public/AB6AXuAY-Qh5a4-896u0f9Azl3-b5DFC0J9SEV4XLud1lgiSxThQmMM_dxWw9xltPMJEEkyg-kJH50RUD6DMCLCxHzGdXSvpQ33lQkU3hzahO4AduxLNUaowGzyswrZxP_UOotUI1lZhDwFym6YR2WIUZZtB0KV7wz5bs38T-DJaYgGh1GzMYFb59dnDY7IkLiudEoYh8Ju1oN-amrJy-CccDGIoNIe4s4Va097xxLK64SwCeHNtB9-r0lkhDdCEaySp-6NenP-J28iRmI8"
                     />
                   </div>
-                </div>
+                </Link>
               </SlideIn>
               <SlideIn direction="right" delay={0.2}>
-                <div className="bg-white border border-outline-variant p-8 group hover:shadow-xl transition-all duration-300 h-full">
+                <Link href="/office" className="bg-white border border-outline-variant p-8 group hover:shadow-xl transition-all duration-300 h-full cursor-pointer block">
                   <span className="material-symbols-outlined text-primary text-4xl mb-4">business_center</span>
-                  <h3 className="font-headline-md text-headline-md mb-2">Ofis Mobilyaları</h3>
-                  <p className="text-secondary text-sm">Verimli çalışma alanları için kurumsal mobilya kurulumları.</p>
-                </div>
+                  <h3 className="font-headline-md text-headline-md mb-2">Büromöbel</h3>
+                  <p className="text-secondary text-sm">Professionelle Montage für effiziente Arbeitsplätze.</p>
+                </Link>
               </SlideIn>
               <SlideIn direction="up" delay={0.3}>
-                <div className="bg-white border border-outline-variant p-8 group hover:shadow-xl transition-all duration-300 h-full">
+                <Link href="/bedroom" className="bg-white border border-outline-variant p-8 group hover:shadow-xl transition-all duration-300 h-full cursor-pointer block">
                   <span className="material-symbols-outlined text-primary text-4xl mb-4">dresser</span>
-                  <h3 className="font-headline-md text-headline-md mb-2">Dolap &amp; Gardırop</h3>
-                  <p className="text-secondary text-sm">Geniş depolama sistemlerinin güvenli ve dengeli kurulumu.</p>
-                </div>
+                  <h3 className="font-headline-md text-headline-md mb-2">Schränke &amp; Garderoben</h3>
+                  <p className="text-secondary text-sm">Sichere und ausgewogene Montage von Stauraumsystemen.</p>
+                </Link>
               </SlideIn>
             </div>
           </div>
@@ -155,22 +155,22 @@ export default function Home() {
               <div className="flex flex-col items-center gap-2">
                 <span className="material-symbols-outlined text-4xl text-primary-fixed">task_alt</span>
                 <p className="font-headline-md text-headline-md">200+</p>
-                <p className="font-label-caps text-label-caps opacity-80 uppercase">Başarılı Proje (2024&apos;ten beri)</p>
+                <p className="font-label-caps text-label-caps opacity-80 uppercase">Erfolgreiche Projekte (seit 2024)</p>
               </div>
               <div className="flex flex-col items-center gap-2">
                 <span className="material-symbols-outlined text-4xl text-primary-fixed">price_check</span>
                 <p className="font-headline-md text-headline-md">100%</p>
-                <p className="font-label-caps text-label-caps opacity-80 uppercase">Sabit Fiyat Garantisi</p>
+                <p className="font-label-caps text-label-caps opacity-80 uppercase">Festpreisgarantie</p>
               </div>
               <div className="flex flex-col items-center gap-2">
                 <span className="material-symbols-outlined text-4xl text-primary-fixed">security</span>
-                <p className="font-headline-md text-headline-md">Sigortalı</p>
-                <p className="font-label-caps text-label-caps opacity-80 uppercase">Hizmet (Haftpflichtversichert)</p>
+                <p className="font-headline-md text-headline-md">Versichert</p>
+                <p className="font-label-caps text-label-caps opacity-80 uppercase">Service (Haftpflichtversichert)</p>
               </div>
               <div className="flex flex-col items-center gap-2">
                 <span className="material-symbols-outlined text-4xl text-primary-fixed">bolt</span>
-                <p className="font-headline-md text-headline-md">2 Saat</p>
-                <p className="font-label-caps text-label-caps opacity-80 uppercase">Hızlı Yanıt Süresi</p>
+                <p className="font-headline-md text-headline-md">2 Stunden</p>
+                <p className="font-label-caps text-label-caps opacity-80 uppercase">Schnelle Antwortzeit</p>
               </div>
             </div>
           </div>
@@ -181,14 +181,14 @@ export default function Home() {
         <section className="py-24 bg-white border-t border-outline-variant">
           <div className="max-w-[1200px] mx-auto px-margin-mobile md:px-0">
             <div className="text-center mb-16">
-              <h2 className="font-headline-lg text-headline-lg text-primary mb-4">Hizmet Bölgelerimiz</h2>
-              <p className="text-secondary max-w-2xl mx-auto">Merkezimiz Leipzig olmak üzere, geniş bir ağda profesyonel montaj hizmeti sunuyoruz.</p>
+              <h2 className="font-headline-lg text-headline-lg text-primary mb-4">Unsere Servicegebiete</h2>
+              <p className="text-secondary max-w-2xl mx-auto">Mit unserem Zentrum in Leipzig bieten wir professionelle Montage in einem großen Netzwerk an.</p>
             </div>
             <SlideIn direction="up" delay={0} className="mb-12 flex justify-center">
               <div className="relative w-full max-w-3xl mx-auto rounded-xl overflow-hidden border border-outline-variant shadow-lg bg-surface-container-low p-2 md:p-4">
                 <img
                   src="/map.png"
-                  alt="Leipzig ve çevre hizmet bölgeleri haritası"
+                  alt="Karte der Servicegebiete Leipzig und Umgebung"
                   className="w-full h-auto object-contain rounded-lg"
                 />
               </div>
@@ -197,7 +197,7 @@ export default function Home() {
               <SlideIn direction="left" delay={0}>
                 <div className="flex flex-col items-center p-6 bg-surface-container-low border border-outline-variant rounded-lg hover:border-primary transition-colors">
                   <span className="material-symbols-outlined text-primary mb-2">location_on</span>
-                  <span className="font-bold text-primary text-center">Leipzig (Merkez)</span>
+                  <span className="font-bold text-primary text-center">Leipzig (Zentrum)</span>
                 </div>
               </SlideIn>
               <SlideIn direction="right" delay={0.05}>
@@ -237,8 +237,8 @@ export default function Home() {
                   <span className="material-symbols-outlined text-5xl">near_me</span>
                 </div>
                 <div>
-                  <h3 className="font-headline-md text-headline-md mb-2 text-primary-fixed">Bölgesel Yakınlık: Hızlı Randevu ve Kişisel Destek</h3>
-                  <p className="font-body-lg opacity-90">Bölgesel yakınlığımız sayesinde size en hızlı şekilde ulaşıyor, mobilya kurulum süreçlerinizi kişisel destek ile kolaylaştırıyoruz.</p>
+                  <h3 className="font-headline-md text-headline-md mb-2 text-primary-fixed">Regionale Nähe: Schnelle Termine und persönlicher Support</h3>
+                  <p className="font-body-lg opacity-90">Dank unserer regionalen Nähe erreichen wir Sie schnell und erleichtern Ihnen den Möbelaufbau mit persönlicher Unterstützung.</p>
                 </div>
               </div>
             </SlideIn>
@@ -256,32 +256,32 @@ export default function Home() {
               <SlideIn direction="right" delay={0.4}>
                 <div className="absolute -bottom-6 -right-6 bg-primary text-white p-8 rounded shadow-2xl hidden md:block">
                   <p className="font-headline-xl text-headline-xl">11+</p>
-                  <p className="font-label-caps text-label-caps opacity-80 uppercase">Yıllık Tecrübe</p>
+                  <p className="font-label-caps text-label-caps opacity-80 uppercase">Jahre Erfahrung</p>
                 </div>
               </SlideIn>
             </div>
             <div>
-              <h2 className="font-headline-lg text-headline-lg text-primary mb-6">Leipzig&apos;in Yerel Gücü ve Alman Hassasiyeti</h2>
+              <h2 className="font-headline-lg text-headline-lg text-primary mb-6">Leipziger Lokalstärke und deutsche Präzision</h2>
               <p className="font-body-lg text-body-lg text-secondary mb-6 leading-relaxed">
-                Leipzig Montage Profis olarak, mobilya montajını sadece parçaları birleştirmek değil, yaşam alanınızı inşa etmek olarak görüyoruz. Leipzig kökenli ekibimizle, bölgenin her noktasına profesyonel el işçiliği ve teknik uzmanlık taşıyoruz.
+                Als Leipzig Montage Profis sehen wir die Möbelmontage nicht nur als Zusammenfügen von Teilen, sondern als Gestaltung Ihres Wohnraums. Mit unserem in Leipzig verwurzelten Team bringen wir professionelle Handwerkskunst und technisches Know-how in jede Ecke der Region.
               </p>
               <ul className="space-y-4 mb-8">
                 <li className="flex items-center gap-3">
                   <span className="material-symbols-outlined text-primary">check_circle</span>
-                  <span>Milisimetrik hassasiyetle montaj garantisi</span>
+                  <span>Montagegarantie mit millimetergenauer Präzision</span>
                 </li>
                 <li className="flex items-center gap-3">
                   <span className="material-symbols-outlined text-primary">check_circle</span>
-                  <span>Sigortalı ve sertifikalı ekip çalışması</span>
+                  <span>Versicherte und zertifizierte Teamarbeit</span>
                 </li>
                 <li className="flex items-center gap-3">
                   <span className="material-symbols-outlined text-primary">check_circle</span>
-                  <span>Leipzig ve 50km çevre illere hizmet</span>
+                  <span>Service in Leipzig und 50 km Umkreis</span>
                 </li>
               </ul>
               <SlideIn direction="right" delay={0.2}>
                 <div className="p-6 bg-white border border-outline-variant border-l-4 border-l-primary">
-                  <p className="italic text-secondary">&quot;Bizim için her vida, evinizdeki konforun bir parçasıdır.&quot;</p>
+                  <p className="italic text-secondary">&quot;Für uns ist jede Schraube ein Teil Ihres Wohnkomforts.&quot;</p>
                 </div>
               </SlideIn>
             </div>
@@ -293,27 +293,27 @@ export default function Home() {
             <SlideIn direction="up" delay={0}>
               <div className="bg-white border border-outline-variant grid grid-cols-1 md:grid-cols-2">
                 <div className="p-12 md:p-16 bg-primary text-white">
-                  <h2 className="font-headline-lg text-headline-lg mb-6">Ücretsiz Teklif Alın</h2>
-                  <p className="font-body-lg text-body-lg mb-12 opacity-80">Projeniz hakkında detayları paylaşın, 1 saat içinde size sabit fiyat teklifimizi iletelim.</p>
+                  <h2 className="font-headline-lg text-headline-lg mb-6">Kostenloses Angebot</h2>
+                  <p className="font-body-lg text-body-lg mb-12 opacity-80">Teilen Sie uns die Details Ihres Projekts mit – innerhalb einer Stunde erhalten Sie unser Festpreisangebot.</p>
                   <div className="space-y-8">
                     <div className="flex items-start gap-4">
                       <span className="material-symbols-outlined text-3xl">call</span>
                       <div>
-                        <p className="font-label-caps uppercase text-sm opacity-60">Hızlı İletişim</p>
+                        <p className="font-label-caps uppercase text-sm opacity-60">Schnelle Kontaktaufnahme</p>
                         <p className="text-xl font-bold">+49 (0) 123 456 789</p>
                       </div>
                     </div>
                     <div className="flex items-start gap-4">
                       <span className="material-symbols-outlined text-3xl">mail</span>
                       <div>
-                        <p className="font-label-caps uppercase text-sm opacity-60">E-Posta</p>
+                        <p className="font-label-caps uppercase text-sm opacity-60">E-Mail</p>
                         <p className="text-xl font-bold">info@leipzig-montage.de</p>
                       </div>
                     </div>
                     <div className="flex items-start gap-4">
                       <span className="material-symbols-outlined text-3xl">location_on</span>
                       <div>
-                        <p className="font-label-caps uppercase text-sm opacity-60">Merkez Ofis</p>
+                        <p className="font-label-caps uppercase text-sm opacity-60">Hauptsitz</p>
                         <p className="text-xl font-bold">Leipzig, Almanya</p>
                       </div>
                     </div>
@@ -323,27 +323,27 @@ export default function Home() {
                   <form className="space-y-6">
                     <div className="grid grid-cols-2 gap-4">
                       <div className="flex flex-col gap-2">
-                        <label className="font-label-caps text-label-caps text-secondary uppercase">İsim Soyisim</label>
-                        <input className="w-full border-outline-variant focus:border-primary focus:ring-0 rounded-none h-12" placeholder="Adınız" type="text" />
+                        <label className="font-label-caps text-label-caps text-secondary uppercase">Vor- und Nachname</label>
+                        <input className="w-full border-outline-variant focus:border-primary focus:ring-0 rounded-none h-12" placeholder="Ihr Name" type="text" />
                       </div>
                       <div className="flex flex-col gap-2">
-                        <label className="font-label-caps text-label-caps text-secondary uppercase">E-posta</label>
-                        <input className="w-full border-outline-variant focus:border-primary focus:ring-0 rounded-none h-12" placeholder="Email adresiniz" type="email" />
+                        <label className="font-label-caps text-label-caps text-secondary uppercase">E-Mail</label>
+                        <input className="w-full border-outline-variant focus:border-primary focus:ring-0 rounded-none h-12" placeholder="Ihre E-Mail-Adresse" type="email" />
                       </div>
                     </div>
                     <div className="flex flex-col gap-2">
-                      <label className="font-label-caps text-label-caps text-secondary uppercase">Hizmet Türü</label>
+                      <label className="font-label-caps text-label-caps text-secondary uppercase">Serviceart</label>
                       <select className="w-full border-outline-variant focus:border-primary focus:ring-0 rounded-none h-12">
-                        <option>Mobilya Montajı</option>
-                        <option>Mutfak Montajı</option>
-                        <option>Ofis ve Ticari Alan</option>
-                        <option>Demontaj &amp; Kurulum</option>
-                        <option>Tamirat &amp; Ayarlama</option>
+                        <option>Möbelmontage</option>
+                        <option>Küchenmontage</option>
+                        <option>Büro &amp; Gewerbe</option>
+                        <option>Demontage &amp; Montage</option>
+                        <option>Reparatur &amp; Einstellung</option>
                       </select>
                     </div>
                     <div className="flex flex-col gap-2">
-                      <label className="font-label-caps text-label-caps text-secondary uppercase">Mesajınız</label>
-                      <textarea className="w-full border-outline-variant focus:border-primary focus:ring-0 rounded-none" placeholder="Mobilya sayısı, model adı veya özel istekleriniz..." rows={4} />
+                      <label className="font-label-caps text-label-caps text-secondary uppercase">Ihre Nachricht</label>
+                      <textarea className="w-full border-outline-variant focus:border-primary focus:ring-0 rounded-none" placeholder="Möbelanzahl, Modellname oder besondere Wünsche..." rows={4} />
                     </div>
                     <a
                       className="w-full bg-[#25D366] text-white h-14 font-bold hover:brightness-110 transition-all uppercase tracking-widest flex items-center justify-center gap-3"
@@ -352,7 +352,7 @@ export default function Home() {
                       rel="noopener noreferrer"
                     >
                       <span className="material-symbols-outlined">chat</span>
-                      WhatsApp ile Hemen Sor
+                      Jetzt per WhatsApp fragen
                     </a>
                   </form>
                 </div>
@@ -365,8 +365,8 @@ export default function Home() {
       <section className="py-24 bg-white">
         <div className="max-w-[1200px] mx-auto px-margin-mobile md:px-0">
           <div className="text-center mb-16">
-            <h2 className="font-headline-lg text-headline-lg text-primary mb-4">Müşteri Ne Diyor?</h2>
-            <p className="text-secondary">Müşterilerimizin Leipzig mobilya montaj hizmetimiz hakkındaki deneyimleri.</p>
+            <h2 className="font-headline-lg text-headline-lg text-primary mb-4">Was sagen unsere Kunden?</h2>
+            <p className="text-secondary">Erfahrungen unserer Kunden mit unserem Möbelmontageservice in Leipzig.</p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <SlideIn direction="left" delay={0}>
@@ -378,7 +378,7 @@ export default function Home() {
                   <span className="material-symbols-outlined" style={{ fontVariationSettings: "'FILL' 1" }}>star</span>
                   <span className="material-symbols-outlined" style={{ fontVariationSettings: "'FILL' 1" }}>star</span>
                 </div>
-                <p className="italic text-on-surface-variant mb-6">&quot;IKEA Pax dolabımın montajı için yardım aldım. Çok profesyonel bir ekipti, tam zamanında geldiler ve kurulum kusursuz oldu. Teşekkürler!&quot;</p>
+                <p className="italic text-on-surface-variant mb-6">&quot;Ich habe Hilfe bei der Montage meines IKEA Pax Schranks bekommen. Sehr professionelles Team, pünktlich gekommen und die Montage war einwandfrei. Danke!&quot;</p>
                 <div className="flex items-center gap-3">
                   <div className="w-10 h-10 rounded-full bg-primary-container flex items-center justify-center text-on-primary-container font-bold">A</div>
                   <div>
@@ -397,7 +397,7 @@ export default function Home() {
                   <span className="material-symbols-outlined" style={{ fontVariationSettings: "'FILL' 1" }}>star</span>
                   <span className="material-symbols-outlined" style={{ fontVariationSettings: "'FILL' 1" }}>star</span>
                 </div>
-                <p className="italic text-on-surface-variant mb-6">&quot;Yeni taşındığım evimin tüm mutfak kurulumunu yaptılar. Sabit fiyat garantisi vermeleri harika, sonradan sürpriz yaşamadık. Tavsiye ederim.&quot;</p>
+                <p className="italic text-on-surface-variant mb-6">&quot;Sie haben die gesamte Küche in meiner neuen Wohnung montiert. Die Festpreisgarantie ist großartig, keine Überraschungen hinterher. Sehr empfehlenswert.&quot;</p>
                 <div className="flex items-center gap-3">
                   <div className="w-10 h-10 rounded-full bg-primary-container flex items-center justify-center text-on-primary-container font-bold">M</div>
                   <div>
@@ -416,7 +416,7 @@ export default function Home() {
                   <span className="material-symbols-outlined" style={{ fontVariationSettings: "'FILL' 1" }}>star</span>
                   <span className="material-symbols-outlined" style={{ fontVariationSettings: "'FILL' 1" }}>star</span>
                 </div>
-                <p className="italic text-on-surface-variant mb-6">&quot;Ofis mobilyalarımızın montajı çok hızlı bitti. İşlerini gerçekten temiz ve titiz yapıyorlar. Fiyat/performans açısından 10 numara.&quot;</p>
+                <p className="italic text-on-surface-variant mb-6">&quot;Die Montage unserer Büromöbel war sehr schnell. Sie arbeiten wirklich sauber und gewissenhaft. Preis-Leistung 10/10.&quot;</p>
                 <div className="flex items-center gap-3">
                   <div className="w-10 h-10 rounded-full bg-primary-container flex items-center justify-center text-on-primary-container font-bold">C</div>
                   <div>
@@ -456,7 +456,7 @@ export default function Home() {
             </div>
             <div className="flex flex-col gap-3">
               <a className="text-on-surface-variant hover:text-primary hover:underline transition-all" href="#">Servicegebiete Leipzig</a>
-              <p className="text-sm text-secondary">Montaj ve Kurulum Çözümleri</p>
+              <p className="text-sm text-secondary">Montage- und Installationslösungen</p>
             </div>
           </div>
         </div>

@@ -78,12 +78,12 @@ export default function Gallery() {
                     <div className="overlay-image" style={{ width: "50%" }}>
                       <img
                         alt="Before Montage"
-                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuDdcaLguGHexQtfY0H0VfCZnE5bOsyV6Bfzcg5k8ztzNK9Z3QgkcS0tPBaajSzmhLY-kCOAWJCITPE6P6WExNzeSpNFxgGXt3FRj2HlECvkPo-aFzDm3c0YcdKJPB99yP20njR-6nFn4RR3ccdDkR4_yGgnJkvF8gd812XgheiYsiVTW03V4NF4GGfyVNFXErdXw1bw9FyUJydo5YeN2uowcF8X75KwkBENNbmBV8uIH3gLOvS9UULRZnai3ES6lg0NLGgBu6Brfho"
+                        src="/living-before.webp"
                       />
                     </div>
                     <img
                       alt="After Montage"
-                      src="https://lh3.googleusercontent.com/aida-public/AB6AXuDdcaLguGHexQtfY0H0VfCZnE5bOsyV6Bfzcg5k8ztzNK9Z3QgkcS0tPBaajSzmhLY-kCOAWJCITPE6P6WExNzeSpNFxgGXt3FRj2HlECvkPo-aFzDm3c0YcdKJPB99yP20njR-6nFn4RR3ccdDkR4_yGgnJkvF8gd812XgheiYsiVTW03V4NF4GGfyVNFXErdXw1bw9FyUJydo5YeN2uowcF8X75KwkBENNbmBV8uIH3gLOvS9UULRZnai3ES6lg0NLGgBu6Brfho"
+                      src="/living-after.webp"
                     />
                     <div className="slider-handle" style={{ left: "50%" }}>
                       <div className="slider-button">
@@ -128,12 +128,12 @@ export default function Gallery() {
                     <div className="overlay-image" style={{ width: "50%" }}>
                       <img
                         alt="Before Montage"
-                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuB0OaYHJrD2mRZD3540mHhuK79T0WNVGeW4xs0KErJEI0ItP6pN4NQ1M0H4Mp8Gyi-YEOxl4Bqwf-Q19stDEkQ4UDDdRDX7XkWE7cQ-TltDl_mmhBCXraR75nlHmg35jgf6Dj-q6y_Sxnl6UOXd8BpyDmD9nb-074bYrY3gRoSEYZHVo-ehacHr1_qo9kJFlOaYZknBRDyJ_67PAVk3ZURFELtIdU9PYMFwaj1FzOkODNjyvewQScmDzG3F-f_yho80NNm_E097wtQ"
+                        src="/kitchen-before.webp"
                       />
                     </div>
                     <img
                       alt="After Montage"
-                      src="https://lh3.googleusercontent.com/aida-public/AB6AXuB0OaYHJrD2mRZD3540mHhuK79T0WNVGeW4xs0KErJEI0ItP6pN4NQ1M0H4Mp8Gyi-YEOxl4Bqwf-Q19stDEkQ4UDDdRDX7XkWE7cQ-TltDl_mmhBCXraR75nlHmg35jgf6Dj-q6y_Sxnl6UOXd8BpyDmD9nb-074bYrY3gRoSEYZHVo-ehacHr1_qo9kJFlOaYZknBRDyJ_67PAVk3ZURFELtIdU9PYMFwaj1FzOkODNjyvewQScmDzG3F-f_yho80NNm_E097wtQ"
+                      src="/kitchen-after.webp"
                     />
                     <div className="slider-handle" style={{ left: "50%" }}>
                       <div className="slider-button">

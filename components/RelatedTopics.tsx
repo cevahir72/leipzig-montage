@@ -7,7 +7,7 @@ const tabs = [
   { id: "office", label: "Office", icon: "business" },
   { id: "kitchen", label: "Kitchen", icon: "countertops" },
   { id: "bedroom", label: "Bedroom", icon: "bed" },
-  { id: "about", label: "About Us", icon: "info" },
+  { id: "about", label: "Über Uns", icon: "info" },
 ];
 
 const content: Record<string, { title: string; desc: string; items: { icon: string; label: string; text: string }[] }> = {
@@ -39,12 +39,12 @@ const content: Record<string, { title: string; desc: string; items: { icon: stri
     ],
   },
   about: {
-    title: "Über Uns / About Us",
-    desc: "From the first consultation to the final installation, we provide a complete end-to-end service under one roof — including tailored guidance, detailed planning, premium furnishings, and expert execution.",
+    title: "Über Uns",
+    desc: "Von der ersten Beratung bis zur endgültigen Montage bieten wir einen kompletten Rundum-Service unter einem Dach – einschließlich maßgeschneiderter Beratung, detaillierter Planung, hochwertiger Einrichtung und professioneller Ausführung.",
     items: [
-      { icon: "history", label: "Erfahrung", text: "11+ Years. Ein Jahrzehnt meisterhafter Montageerfahrung in Leipzig und Umgebung." },
+      { icon: "history", label: "Erfahrung", text: "11+ Jahre. Ein Jahrzehnt meisterhafter Montageerfahrung in Leipzig und Umgebung." },
       { icon: "support_agent", label: "Zuverlässigkeit", text: "7/24 Support. Termintreue ist unser höchstes Gebot." },
-      { icon: "verified", label: "Qualität", text: "German Precision. Höchste Standards bei jedem Projekt." },
+      { icon: "verified", label: "Qualität", text: "Deutsche Präzision. Höchste Standards bei jedem Projekt." },
     ],
   },
 };
@@ -57,8 +57,8 @@ export default function RelatedTopics() {
     <section className="py-24 bg-surface-container-low">
       <div className="max-w-[1200px] mx-auto px-margin-mobile md:px-0">
         <div className="text-center mb-12">
-          <h2 className="font-headline-lg text-headline-lg text-primary mb-4">İlgili Başlıklar</h2>
-          <p className="text-secondary max-w-2xl mx-auto">Hizmet kategorilerimizi keşfedin ve ihtiyacınıza uygun çözümü bulun.</p>
+          <h2 className="font-headline-lg text-headline-lg text-primary mb-4">Verwandte Themen</h2>
+          <p className="text-secondary max-w-2xl mx-auto">Entdecken Sie unsere Servicekategorien und finden Sie die passende Lösung für Ihre Bedürfnisse.</p>
         </div>
 
         <div className="flex justify-center mb-12">
@@ -88,7 +88,7 @@ export default function RelatedTopics() {
                 <p className="text-secondary leading-relaxed">{current.desc}</p>
               </div>
               <div className="flex gap-3 justify-start md:justify-end">
-                <span className="px-4 py-2 bg-secondary-container text-on-secondary-container font-label-caps text-label-caps rounded-full">Insurance Included</span>
+                <span className="px-4 py-2 bg-secondary-container text-on-secondary-container font-label-caps text-label-caps rounded-full">Versicherung inklusive</span>
                 <span className="px-4 py-2 bg-secondary-container text-on-secondary-container font-label-caps text-label-caps rounded-full">24h Express</span>
               </div>
             </div>

@@ -16,7 +16,7 @@ export default function Bedroom() {
             <img
               alt="Bedroom furniture assembly"
               className="w-full h-full object-cover"
-              src="https://lh3.googleusercontent.com/aida-public/AB6AXuBhZfyRwbNUCqTFgAQbphk9U6pq62XVbdQALjaBZX-FhgkUZ-og6RQUCp-7HSSM-jL7NT-qLQZwOLwLmKFD3LIPILD3snVsPoSJ6A3_SMCvRazqeu2MNwHHHodd0TL5PRm9d1RC1_1Mm9bvApCCt10kuCROy7WH1ImEYeZfPP-MXZo1pRKIK2eYJX6dELmUUdFOoeVATr3askEDLqHNIiBJn1AvfktAIpvY9CtltNyQ-ia757YIyqUcZDNKaOpjsUzhS-Fm5-OwJYU"
+              src="/bedroom.webp"
             />
           </div>
           <SlideIn direction="left" delay={0} className="relative z-20 max-w-[1200px] mx-auto px-gutter w-full">

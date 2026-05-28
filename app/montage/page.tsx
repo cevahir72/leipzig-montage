@@ -16,7 +16,7 @@ export default function Montage() {
             <img
               alt="Furniture assembly"
               className="w-full h-full object-cover"
-              src="https://lh3.googleusercontent.com/aida-public/AB6AXuAXdwTq0HCmQTBlYDVHcPml34n0_syEO0CWxKHRppIxqfFVjADR7IhAmdOyaj_PRcvJUVQZUUqQLAiJV0WEKEp1zA9LmuXCVT034HREpI1ZwSfAN4ZQ0caeMjtdp4rPEeIGP0IX9ZjIsTcGRr_j08HHCv5oZVwYhfTxca9CAoIwy2c7hOSVjWC51bYp9_4q4e9EESAXAocK0qzQCoB7dlDrN3Cruyn1WgPUTf25UkL1Ule7RDUImiILJd8MTldL0RUPo2wjmzoXp9I"
+              src="/montage.webp"
             />
           </div>
           <SlideIn direction="left" delay={0} className="relative z-20 max-w-[1200px] mx-auto px-gutter w-full">
@@ -24,7 +24,7 @@ export default function Montage() {
               <span className="font-label-caps text-label-caps uppercase tracking-wider mb-4 block text-primary-fixed">Möbelmontage</span>
               <h1 className="font-headline-xl text-headline-xl mb-6">Professionelle Möbelmontage</h1>
               <p className="font-body-lg text-body-lg text-inverse-on-surface opacity-90 border-l-4 border-primary-fixed pl-6">
-                IKEA, POCO, Höffner – alle Marken. Milimetrik hassasiyetle profesyonel montaj.
+                IKEA, POCO, Höffner – alle Marken. Präzise und professionelle Montage.
               </p>
             </div>
           </SlideIn>
@@ -51,7 +51,7 @@ export default function Montage() {
                   präzise Montage Ihrer Möbelstücke.
                 </p>
                 <div className="flex gap-4">
-                  <span className="px-4 py-2 bg-secondary-container text-on-secondary-container font-label-caps text-label-caps rounded-full">Insurance Included</span>
+                  <span className="px-4 py-2 bg-secondary-container text-on-secondary-container font-label-caps text-label-caps rounded-full">Versicherung inklusive</span>
                   <span className="px-4 py-2 bg-secondary-container text-on-secondary-container font-label-caps text-label-caps rounded-full">Alle Marken</span>
                 </div>
               </SlideIn>

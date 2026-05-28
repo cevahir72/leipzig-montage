@@ -77,14 +77,13 @@ export default function Contact() {
 
       <header className="pt-32 pb-16 px-margin-mobile md:px-0 max-w-[1200px] mx-auto text-center">
         <span className="inline-block py-1 px-3 bg-secondary-container text-on-secondary-container rounded-full font-label-caps mb-4">
-          AKILLI FİYATLANDIRMA SİSTEMİ
+          INTELLIGENTES PREISSYSTEM
         </span>
         <h1 className="font-headline-xl-mobile md:font-headline-xl text-headline-xl-mobile md:text-headline-xl text-primary mb-6">
-          Hızlı Teklif &amp; İletişim
+          Schnelles Angebot &amp; Kontakt
         </h1>
         <p className="font-body-lg text-body-lg text-secondary max-w-2xl mx-auto">
-          AI destekli sistemimizle saniyeler içinde tahmini fiyat alın. Mobilya montajında
-          Leipzig&apos;in en güvenilir partneri.
+          Erhalten Sie mit unserem KI-gestützten System in Sekunden eine Preissschätzung. Der zuverlässigste Partner für Möbelmontage in Leipzig.
         </p>
       </header>
 
@@ -92,11 +91,11 @@ export default function Contact() {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-gutter">
           <SlideIn direction="left" delay={0} className="lg:col-span-8 bg-surface-container-lowest border border-outline-variant rounded-xl p-6 md:p-10 ai-glow">
             <div className="flex items-center justify-between mb-12 max-w-md mx-auto">
-              <StepperDot step={1} label="ANALİZ" currentStep={currentStep} onGoToStep={goToStep} />
+              <StepperDot step={1} label="ANALYSE" currentStep={currentStep} onGoToStep={goToStep} />
               <div className="flex-1 h-0.5 bg-outline-variant mx-2 -mt-6" />
-              <StepperDot step={2} label="DETAYLAR" currentStep={currentStep} onGoToStep={goToStep} />
+              <StepperDot step={2} label="DETAILS" currentStep={currentStep} onGoToStep={goToStep} />
               <div className="flex-1 h-0.5 bg-outline-variant mx-2 -mt-6" />
-              <StepperDot step={3} label="TAHMİN" currentStep={currentStep} onGoToStep={goToStep} />
+              <StepperDot step={3} label="SCHÄTZUNG" currentStep={currentStep} onGoToStep={goToStep} />
             </div>
 
             <form
@@ -104,47 +103,47 @@ export default function Contact() {
               onSubmit={(e) => {
                 e.preventDefault();
                 alert(
-                  "Teklif talebiniz başarıyla alındı! Danışmanlarımız 2 saat içinde sizinle iletişime geçecek."
+                  "Ihre Angebotsanfrage wurde erfolgreich empfangen! Unsere Berater werden sich innerhalb von 2 Stunden bei Ihnen melden."
                 );
               }}
             >
               {currentStep === 1 && (
                 <div className="step-transition" id="step-1">
                   <h2 className="font-headline-md text-headline-md text-primary mb-4 text-center">
-                    Mobilyalarınızı Tanımlayın
+                    Beschreiben Sie Ihre Möbel
                   </h2>
                   <p className="text-secondary text-center mb-8">
-                    Ürün fotoğraflarını yükleyin veya IKEA ürün kodlarını girin.
+                    Laden Sie Produktfotos hoch oder geben Sie IKEA Produktcodes ein.
                   </p>
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                     <div className="border-2 border-dashed border-outline-variant rounded-xl p-8 flex flex-col items-center justify-center hover:border-primary transition-colors cursor-pointer bg-surface-container-low group">
                       <span className="material-symbols-outlined text-4xl text-outline group-hover:text-primary mb-4">
                         cloud_upload
                       </span>
-                      <p className="font-label-caps text-secondary text-center">FOTOĞRAF YÜKLE</p>
-                      <p className="text-xs text-outline mt-2">JPG, PNG veya PDF</p>
+                      <p className="font-label-caps text-secondary text-center">FOTOS HOCHLADEN</p>
+                      <p className="text-xs text-outline mt-2">JPG, PNG oder PDF</p>
                       <input className="hidden" type="file" />
                     </div>
                     <div className="space-y-4">
                       <div>
-                        <label className="font-label-caps text-secondary mb-2 block">
-                          IKEA ÜRÜN KODU / LİNK
-                        </label>
-                        <input
-                          className="w-full bg-white border border-outline-variant p-4 rounded-lg"
-                          placeholder="Örn: 802.130.74 veya Link"
-                          type="text"
-                        />
+                          <label className="font-label-caps text-secondary mb-2 block">
+                            IKEA PRODUKTCODE / LINK
+                          </label>
+                          <input
+                            className="w-full bg-white border border-outline-variant p-4 rounded-lg"
+                            placeholder="z.B. 802.130.74 oder Link"
+                            type="text"
+                          />
                       </div>
                       <div>
                         <label className="font-label-caps text-secondary mb-2 block">
-                          PLANLAMA KODU (PAX/METOD)
-                        </label>
-                        <input
-                          className="w-full bg-white border border-outline-variant p-4 rounded-lg"
-                          placeholder="Örn: LXZY92"
-                          type="text"
-                        />
+                            PLANUNGSCODE (PAX/METOD)
+                          </label>
+                          <input
+                            className="w-full bg-white border border-outline-variant p-4 rounded-lg"
+                            placeholder="z.B. LXZY92"
+                            type="text"
+                          />
                       </div>
                     </div>
                   </div>
@@ -154,7 +153,7 @@ export default function Contact() {
                       type="button"
                       onClick={() => goToStep(2)}
                     >
-                      SONRAKİ ADIM
+                      NÄCHSTER SCHRITT
                       <span className="material-symbols-outlined group-hover:translate-x-1 transition-transform">
                         arrow_forward
                       </span>
@@ -166,16 +165,16 @@ export default function Contact() {
               {currentStep === 2 && (
                 <div className="step-transition" id="step-2">
                   <h2 className="font-headline-md text-headline-md text-primary mb-8 text-center">
-                    Hizmet Detaylarını Belirleyin
+                    Legen Sie die Servicedetails fest
                   </h2>
                   <div className="space-y-6 max-w-xl mx-auto">
                     <div className="flex items-center justify-between p-4 bg-white border border-outline-variant rounded-lg">
                       <div>
                         <p className="font-body-md font-bold text-primary">
-                          Eski mobilya sökümü mü gerekiyor?
+                          Ist ein Abbau alter Möbel erforderlich?
                         </p>
                         <p className="text-sm text-secondary">
-                          Mevcut mobilyalarınızı güvenle demonte edebiliriz.
+                          Wir können Ihre vorhandenen Möbel sicher demontieren.
                         </p>
                       </div>
                       <div className="flex bg-surface-container rounded-full p-1">
@@ -188,7 +187,7 @@ export default function Contact() {
                           type="button"
                           onClick={() => setDismantle("yes")}
                         >
-                          Evet
+                          Ja
                         </button>
                         <button
                           className={`px-4 py-1 rounded-full text-sm font-bold ${
@@ -199,41 +198,41 @@ export default function Contact() {
                           type="button"
                           onClick={() => setDismantle("no")}
                         >
-                          Hayır
+                          Nein
                         </button>
                       </div>
                     </div>
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                       <div>
                         <label className="font-label-caps text-secondary mb-2 block">
-                          ALIM ADRESİ (SEÇENEKLİ)
+                          ABHOLADRESSE (OPTIONAL)
                         </label>
                         <input
                           className="w-full bg-white border border-outline-variant p-4 rounded-lg"
-                          placeholder="Mağaza veya Depo"
+                          placeholder="Geschäft oder Lager"
                           type="text"
                         />
                       </div>
                       <div>
                         <label className="font-label-caps text-secondary mb-2 block">
-                          TESLİMAT ADRESİ
+                          LIEFERADRESSE
                         </label>
                         <input
                           className="w-full bg-white border border-outline-variant p-4 rounded-lg"
-                          placeholder="Montaj yapılacak ev"
+                          placeholder="Ort der Montage"
                           type="text"
                         />
                       </div>
                     </div>
                     <div>
-                      <label className="font-label-caps text-secondary mb-2 block">KAT BİLGİSİ</label>
+                      <label className="font-label-caps text-secondary mb-2 block">STOCKWERK</label>
                       <select className="w-full bg-white border border-outline-variant p-4 rounded-lg appearance-none">
-                        <option>EG (Giriş Kat)</option>
+                        <option>EG (Erdgeschoss)</option>
                         <option>1. OG</option>
                         <option>2. OG</option>
                         <option>3. OG</option>
-                        <option>Daha yüksek (Asansörlü)</option>
-                        <option>Daha yüksek (Asansörsüz)</option>
+                        <option>Höher (mit Aufzug)</option>
+                        <option>Höher (ohne Aufzug)</option>
                       </select>
                     </div>
                   </div>
@@ -244,7 +243,7 @@ export default function Contact() {
                       onClick={() => goToStep(1)}
                     >
                       <span className="material-symbols-outlined">arrow_back</span>
-                      GERİ DÖN
+                      ZURÜCK
                     </button>
                     <button
                       className="bg-primary text-on-primary px-10 py-4 rounded-lg font-label-caps hover:bg-primary-container flex items-center gap-2 group"
@@ -255,11 +254,11 @@ export default function Contact() {
                       {calculating ? (
                         <>
                           <span className="material-symbols-outlined animate-spin">refresh</span>
-                          ANALİZ EDİLİYOR...
+                          ANALYSE LÄUFT...
                         </>
                       ) : (
                         <>
-                          HESAPLA &amp; TAHMİNİ GÖR
+                          BERECHNEN &amp; SCHÄTZUNG
                           <span className="material-symbols-outlined group-hover:scale-110 transition-transform">
                             auto_awesome
                           </span>
@@ -273,15 +272,15 @@ export default function Contact() {
               {currentStep === 3 && (
                 <div className="step-transition" id="step-3">
                   <h2 className="font-headline-md text-headline-md text-primary mb-8 text-center">
-                    Size Özel Fiyat Tahmini
+                    Ihre Individuelle Preissschätzung
                   </h2>
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
                     <div className="bg-primary-container text-on-primary-container p-8 rounded-xl relative overflow-hidden">
                       <div className="relative z-10">
-                        <p className="font-label-caps opacity-80 mb-2">TAHMİNİ FİYATIMIZ</p>
+                        <p className="font-label-caps opacity-80 mb-2">UNSER GESCHÄTZTER PREIS</p>
                         <div className="text-4xl font-bold mb-4">€185,00*</div>
                         <p className="text-sm opacity-70 italic">
-                          *Kesin teklif incelemeden sonra iletilecektir.
+                          *Das endgültige Angebot wird nach Prüfung übermittelt.
                         </p>
                       </div>
                       <span className="material-symbols-outlined absolute -right-4 -bottom-4 text-9xl opacity-10">
@@ -289,30 +288,29 @@ export default function Contact() {
                       </span>
                     </div>
                     <div className="border border-outline-variant p-8 rounded-xl bg-white">
-                      <p className="font-label-caps text-secondary mb-4">PİYASA KIYASLAMASI</p>
+                      <p className="font-label-caps text-secondary mb-4">MARKTVERGLEICH</p>
                       <div className="flex items-center justify-between mb-4">
-                        <span className="text-secondary font-body-md">Taskrabbit Ortalaması:</span>
+                        <span className="text-secondary font-body-md">Taskrabbit Durchschnitt:</span>
                         <span className="font-bold text-secondary line-through">€218,00</span>
                       </div>
                       <div className="flex items-center gap-2 text-primary font-bold bg-secondary-container p-3 rounded-lg">
                         <span className="material-symbols-outlined">check_circle</span>
-                        <span>Biz %15 daha uygunuz.</span>
+                          <span>Wir sind 15 % günstiger.</span>
                       </div>
                     </div>
                   </div>
                   <div className="bg-surface-container-high p-6 rounded-xl flex flex-col md:flex-row items-center gap-6 mb-12">
                     <div className="flex-1">
-                      <h3 className="font-headline-md text-primary mb-2">Son Adım: Onay Alın</h3>
+                      <h3 className="font-headline-md text-primary mb-2">Letzter Schritt: Bestätigung</h3>
                       <p className="text-secondary">
-                        Bu verileri uzmanlarımıza iletin, size 2 saat içinde kesin bir teklif paketi
-                        hazırlayalım.
+                        Übermitteln Sie diese Daten an unsere Experten und wir erstellen innerhalb von 2 Stunden ein verbindliches Angebot.
                       </p>
                     </div>
                     <button
                       className="w-full md:w-auto bg-primary text-on-primary px-8 py-5 rounded-lg font-label-caps hover:bg-primary-container shadow-lg shadow-primary-container/20 whitespace-nowrap active:scale-95 transition-all"
                       type="submit"
                     >
-                      AI İLE FORMU DOLDUR, 2 SAAT İÇİNDE KESİN TEKLİFİNİ AL
+                      FORMULAR AUSFÜLLEN, VERBINDLICHES ANGEBOT IN 2 STD.
                     </button>
                   </div>
                   <div className="text-center">
@@ -321,7 +319,7 @@ export default function Contact() {
                       type="button"
                       onClick={() => goToStep(2)}
                     >
-                      Bilgileri Düzenle
+                      Informationen bearbeiten
                     </button>
                   </div>
                 </div>
@@ -332,32 +330,32 @@ export default function Contact() {
           <div className="lg:col-span-4 space-y-6">
             <SlideIn direction="right" delay={0.1}>
             <div className="bg-white border border-outline-variant rounded-xl p-6">
-              <h3 className="font-headline-md text-primary mb-6">Neden Bizi Seçmelisiniz?</h3>
+              <h3 className="font-headline-md text-primary mb-6">Warum uns wählen?</h3>
               <ul className="space-y-4">
                 <li className="flex gap-4">
                   <span className="material-symbols-outlined text-primary">verified_user</span>
                   <div>
-                    <p className="font-bold text-primary">Sigortalı Hizmet</p>
+                    <p className="font-bold text-primary">Versicherter Service</p>
                     <p className="text-sm text-secondary">
-                      Tüm montaj işlemlerimiz Allianz sigortası altındadır.
+                      Alle Montagearbeiten sind bei der Allianz versichert.
                     </p>
                   </div>
                 </li>
                 <li className="flex gap-4">
                   <span className="material-symbols-outlined text-primary">timer</span>
                   <div>
-                    <p className="font-bold text-primary">24h Express</p>
+                    <p className="font-bold text-primary">                    24h Express-Service</p>
                     <p className="text-sm text-secondary">
-                      Leipzig içinde 24 saat içinde randevu garantisi.
+                      Termingarantie innerhalb von 24 Stunden in Leipzig.
                     </p>
                   </div>
                 </li>
                 <li className="flex gap-4">
                   <span className="material-symbols-outlined text-primary">construction</span>
                   <div>
-                    <p className="font-bold text-primary">Uzman Ekip</p>
+                    <p className="font-bold text-primary">Expertenteam</p>
                     <p className="text-sm text-secondary">
-                      Sadece mobilya montajında uzmanlaşmış marangozlar.
+                      Nur auf Möbelmontage spezialisierte Handwerker.
                     </p>
                   </div>
                 </li>
@@ -366,14 +364,14 @@ export default function Contact() {
             </SlideIn>
             <SlideIn direction="right" delay={0.2}>
             <div className="relative rounded-xl overflow-hidden aspect-video group">
-              <img
-                className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
-                alt="Profesyonel mobilya montaj uzmanı"
+                <img
+                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                  alt="Professioneller Möbelmontage-Experte"
                 src="https://lh3.googleusercontent.com/aida-public/AB6AXuAf7VTiFPMCyF0hhUZm01cTPD1AfYqvhe7Kfy-DD2bDocS4_RP0drt30VcxnbL7LfKvnRpCna2OXm2A_3bH8vcSHRqhq1W4rpO471U339S-5h92gzurmfJ-Tf03yg9Cpy6T2wDXXJvjyYQHwL5EkklS40UlDuWlH_ooOboWziqpi7cSE2liX44bvaepcMVDHBY38VmXvj50ffs_gJyx2Za_8WvvughIniKaMcRBwoEgmEMHgKlixMTaQn_tA6tZvMKhbd7UctteFv4"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-primary/80 to-transparent flex items-end p-6">
                 <p className="text-white font-bold">
-                  Leipzig genelinde +5.000 başarılı montaj projesi.
+                  Über 5.000 erfolgreiche Montageprojekte in ganz Leipzig.
                 </p>
             </div>
             </div>
@@ -389,13 +387,12 @@ export default function Contact() {
               Leipzig Montage Profis
             </div>
             <p className="text-secondary max-w-md">
-              Meisterhafte Montage in Sachsen. Ev ve ofis mobilyalarınız için profesyonel kurulum
-              çözümleri sunuyoruz.
+              Meisterhafte Montage in Sachsen.                Wir bieten professionelle Montagelösungen für Ihre Wohn- und Büromöbel.
             </p>
           </div>
           <div className="grid grid-cols-2 gap-4">
             <div className="flex flex-col gap-2">
-              <p className="font-label-caps text-primary mb-2">KURUMSAL</p>
+              <p className="font-label-caps text-primary mb-2">UNTERNEHMEN</p>
               <a className="text-secondary hover:text-primary transition-all" href="#">
                 Impressum
               </a>
@@ -407,7 +404,7 @@ export default function Contact() {
               </a>
             </div>
             <div className="flex flex-col gap-2">
-              <p className="font-label-caps text-primary mb-2">HİZMET</p>
+              <p className="font-label-caps text-primary mb-2">SERVICE</p>
               <a className="text-secondary hover:text-primary transition-all" href="#">
                 Servicegebiete
               </a>
@@ -415,7 +412,7 @@ export default function Contact() {
                 Partnerprogramm
               </a>
               <Link className="text-primary font-bold underline" href="/contact">
-                Hızlı Teklif
+                Schnelles Angebot
               </Link>
             </div>
           </div>
@@ -432,7 +429,7 @@ export default function Contact() {
         rel="noopener noreferrer"
       >
         <span className="material-symbols-outlined text-2xl">chat</span>
-        <span className="font-bold">WhatsApp ile Hemen Sor</span>
+        <span className="font-bold">WhatsApp – Jetzt Fragen</span>
       </a>
     </>
   );

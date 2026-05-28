@@ -8,9 +8,9 @@ const hankenGrotesk = Hanken_Grotesk({
 });
 
 export const metadata: Metadata = {
-  title: "Leipzig Montage Profis | Profesyonel Mobilya Montajı",
+  title: "Moebelmontage-Leipzig | Professionelle Möbelmontage",
   description:
-    "11 yıllık deneyim ve haftalık 7 gün ulaşılabilirlik ile Leipzig ve çevresinde mobilya kurulumunda güvenilir çözüm ortağınız.",
+    "11 Jahre Erfahrung und 7 Tage die Woche erreichbar – Ihr zuverlässiger Partner für Möbelmontage in Leipzig und Umgebung.",
   icons: { icon: "/favicon.ico" },
 };
 
@@ -20,7 +20,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="tr" className={`${hankenGrotesk.variable} light`}>
+    <html lang="de" className={`${hankenGrotesk.variable} light`}>
       <head>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link
