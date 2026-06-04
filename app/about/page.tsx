@@ -84,15 +84,11 @@ export default function About() {
               <SlideIn direction="left" delay={0}>
                 <div className="bg-surface-container-lowest p-10 tonal-elevation text-center">
                   <div className="mb-6 flex justify-center">
-                    <span className="material-symbols-outlined text-primary text-5xl">history</span>
+                    <span className="material-symbols-outlined text-primary text-5xl">near_me</span>
                   </div>
-                  <h3 className="font-headline-md text-headline-md text-primary mb-3">Erfahrung</h3>
-                  <p className="font-label-caps text-label-caps text-on-surface-variant uppercase mb-4">
-                    11+ Years
-                  </p>
+                  <h3 className="font-headline-md text-headline-md text-primary mb-3">50+ km</h3>
                   <p className="font-body-md text-body-md text-on-surface-variant">
-                    Ein Jahrzehnt meisterhafter Montageerfahrung in Leipzig und Umgebung. Wir kennen
-                    jedes Scharnier und jede Schraube.
+                    Wir arbeiten an Entfernungen von über 50 km
                   </p>
                 </div>
               </SlideIn>

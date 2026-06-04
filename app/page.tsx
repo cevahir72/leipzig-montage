@@ -80,7 +80,7 @@ export default function Home() {
           <div className="max-w-[1200px] mx-auto px-margin-mobile md:px-0 flex flex-col md:flex-row justify-between gap-gutter">
             <div className="flex items-center gap-4">
               <span className="material-symbols-outlined text-on-primary text-3xl">verified</span>
-              <span className="font-headline-md text-headline-md text-on-primary">11 Jahre Erfahrung</span>
+              <span className="font-headline-md text-headline-md text-on-primary">50+ km Auch über</span>
             </div>
             <div className="flex items-center gap-4">
               <span className="material-symbols-outlined text-on-primary text-3xl">payments</span>
@@ -93,19 +93,19 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="py-24 bg-surface">
+        <section id="leistungen" className="py-24 bg-surface">
           <div className="max-w-[1200px] mx-auto px-margin-mobile md:px-0">
             <div className="text-center mb-16">
               <h2 className="font-headline-lg text-headline-lg text-primary mb-4">Unsere Leistungen</h2>
               <p className="text-secondary max-w-2xl mx-auto">Präzise Lösungen für jede Art von Möbelmontage.</p>
             </div>
-            <div className="grid grid-cols-1 md:grid-cols-4 md:grid-rows-2 gap-gutter h-auto md:h-[600px]">
+            <div className="grid grid-cols-1 md:grid-cols-4 gap-gutter">
               <SlideIn direction="left" delay={0} className="md:col-span-2 md:row-span-2">
                 <Link href="/montage" className="bg-white border border-outline-variant p-8 group hover:shadow-xl transition-all duration-300 flex flex-col h-full cursor-pointer">
                   <img
                     alt="IKEA Montage"
                     className="w-full h-64 object-cover mb-8"
-                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuBXXZ5wqwAGos9JIxNCrK79kl68kjdQF3gtSdMlPvJ8FucKxG87n0-Qi_Nl4-Ne1q0o5sUZMZe3V_mS-2VVxdkn0HqFlWzIo4sA_u5XJ9mvESnzuNcx0AtigGTcZci2_679Q97fjwA-OVtsNUsnddODkgQ1zJVT34K5yjbjRnD9BacNFqNPl-eTv4U_SMwnhF3yR3DjeZ5TRQWiOWMu2OcS9oYHpCA97D1BgUzlASn5CWYgL_enzgyAEt_2OwpdxcrhYYw6tYtcYxI"
+                    src="/IKEA.webp"
                   />
                   <div className="mt-auto">
                     <span className="bg-surface-container text-primary font-bold px-3 py-1 text-sm rounded mb-4 inline-block">Beliebter Service</span>
@@ -146,6 +146,13 @@ export default function Home() {
                   <p className="text-secondary text-sm">Sichere und ausgewogene Montage von Stauraumsystemen.</p>
                 </Link>
               </SlideIn>
+              <SlideIn direction="up" delay={0.4} className="md:col-span-4">
+                <Link href="/services" className="bg-white border border-outline-variant p-8 group hover:shadow-xl transition-all duration-300 h-full cursor-pointer block">
+                  <span className="material-symbols-outlined text-primary text-4xl mb-4">build</span>
+                  <h3 className="font-headline-md text-headline-md mb-2">Sonstige Dienstleistungen</h3>
+                  <p className="text-secondary text-sm">Darüber hinaus übernehmen wir auch die Montage aller anderen Möbelstücke</p>
+                </Link>
+              </SlideIn>
             </div>
           </div>
         </section>
@@ -155,7 +162,7 @@ export default function Home() {
             <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
               <div className="flex flex-col items-center gap-2">
                 <span className="material-symbols-outlined text-4xl text-primary-fixed">task_alt</span>
-                <p className="font-headline-md text-headline-md">200+</p>
+                <p className="font-headline-md text-headline-md">1000+</p>
                 <p className="font-label-caps text-label-caps opacity-80 uppercase">Erfolgreiche Projekte (seit 2024)</p>
               </div>
               <div className="flex flex-col items-center gap-2">
@@ -188,45 +195,40 @@ export default function Home() {
             <SlideIn direction="up" delay={0} className="mb-12 flex justify-center">
               <div className="relative w-full max-w-3xl mx-auto rounded-xl overflow-hidden border border-outline-variant shadow-lg bg-surface-container-low p-2 md:p-4">
                 <img
-                  src="/map.png"
+                  src="/map.webp"
                   alt="Karte der Servicegebiete Leipzig und Umgebung"
                   className="w-full h-auto object-contain rounded-lg"
                 />
               </div>
             </SlideIn>
-            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6 mb-16">
+            <div className="flex flex-wrap justify-center gap-6 mb-16">
               <SlideIn direction="left" delay={0}>
-                <div className="flex flex-col items-center p-6 bg-surface-container-low border border-outline-variant rounded-lg hover:border-primary transition-colors">
+                <div className="flex flex-col items-center p-6 bg-surface-container-low border border-outline-variant rounded-lg hover:border-primary transition-colors w-[165px]">
                   <span className="material-symbols-outlined text-primary mb-2">location_on</span>
                   <span className="font-bold text-primary text-center">Leipzig (Zentrum)</span>
                 </div>
               </SlideIn>
               <SlideIn direction="right" delay={0.05}>
-                <div className="flex flex-col items-center p-6 bg-surface-container-low border border-outline-variant rounded-lg hover:border-primary transition-colors">
+                <div className="flex flex-col items-center p-6 bg-surface-container-low border border-outline-variant rounded-lg hover:border-primary transition-colors w-[165px]">
                   <span className="material-symbols-outlined text-primary mb-2">location_on</span>
                   <span className="font-bold text-primary text-center">Halle (Saale)</span>
                 </div>
               </SlideIn>
-              <SlideIn direction="left" delay={0.1}>
-                <div className="flex flex-col items-center p-6 bg-surface-container-low border border-outline-variant rounded-lg hover:border-primary transition-colors">
-                  <span className="material-symbols-outlined text-primary mb-2">location_on</span>
-                  <span className="font-bold text-primary text-center">Chemnitz</span>
-                </div>
-              </SlideIn>
+
               <SlideIn direction="right" delay={0.15}>
-                <div className="flex flex-col items-center p-6 bg-surface-container-low border border-outline-variant rounded-lg hover:border-primary transition-colors">
+                <div className="flex flex-col items-center p-6 bg-surface-container-low border border-outline-variant rounded-lg hover:border-primary transition-colors w-[165px]">
                   <span className="material-symbols-outlined text-primary mb-2">location_on</span>
                   <span className="font-bold text-primary text-center">Jena</span>
                 </div>
               </SlideIn>
               <SlideIn direction="left" delay={0.2}>
-                <div className="flex flex-col items-center p-6 bg-surface-container-low border border-outline-variant rounded-lg hover:border-primary transition-colors">
+                <div className="flex flex-col items-center p-6 bg-surface-container-low border border-outline-variant rounded-lg hover:border-primary transition-colors w-[165px]">
                   <span className="material-symbols-outlined text-primary mb-2">location_on</span>
                   <span className="font-bold text-primary text-center">Naumburg</span>
                 </div>
               </SlideIn>
               <SlideIn direction="right" delay={0.25}>
-                <div className="flex flex-col items-center p-6 bg-surface-container-low border border-outline-variant rounded-lg hover:border-primary transition-colors">
+                <div className="flex flex-col items-center p-6 bg-surface-container-low border border-outline-variant rounded-lg hover:border-primary transition-colors w-[165px]">
                   <span className="material-symbols-outlined text-primary mb-2">location_on</span>
                   <span className="font-bold text-primary text-center">Gera</span>
                 </div>
@@ -256,8 +258,8 @@ export default function Home() {
               />
               <SlideIn direction="right" delay={0.4}>
                 <div className="absolute -bottom-6 -right-6 bg-primary text-white p-8 rounded shadow-2xl hidden md:block">
-                  <p className="font-headline-xl text-headline-xl">11+</p>
-                  <p className="font-label-caps text-label-caps opacity-80 uppercase">Jahre Erfahrung</p>
+                  <p className="font-headline-xl text-headline-xl">50km +</p>
+                  <p className="font-label-caps text-label-caps opacity-80 uppercase">Auch über</p>
                 </div>
               </SlideIn>
             </div>
@@ -315,7 +317,7 @@ export default function Home() {
                       <span className="material-symbols-outlined text-3xl">location_on</span>
                       <div>
                         <p className="font-label-caps uppercase text-sm opacity-60">Hauptsitz</p>
-                        <p className="text-xl font-bold">Leipzig, Almanya</p>
+                        <p className="text-xl font-bold">Leipzig, Deutschland</p>
                       </div>
                     </div>
                   </div>

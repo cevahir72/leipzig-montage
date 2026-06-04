@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { useState } from "react";
+import { FaWhatsapp } from "react-icons/fa";
 import SlideIn from "@/components/SlideIn";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
@@ -389,7 +390,7 @@ export default function Contact() {
         target="_blank"
         rel="noopener noreferrer"
       >
-        <span className="material-symbols-outlined text-2xl">chat</span>
+        <FaWhatsapp className="text-2xl" />
         <span className="font-bold">WhatsApp – Jetzt Fragen</span>
       </a>
     </>

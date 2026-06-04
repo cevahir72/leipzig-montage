@@ -4,6 +4,7 @@ import { useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { motion, AnimatePresence } from "framer-motion";
+import { FaWhatsapp } from "react-icons/fa";
 
 const links = [
   { href: "/office", label: "Büro" },
@@ -23,8 +24,9 @@ export default function Navbar() {
   return (
     <header className="bg-surface sticky top-0 z-50 border-b border-outline-variant">
       <nav className="flex justify-between items-center h-16 max-w-[1200px] mx-auto px-margin-mobile md:px-0">
-        <Link href="/" className="font-headline-sm md:font-headline-md text-headline-sm md:text-headline-md font-bold text-primary shrink-0">
-          Moebelmontage-Leipzig
+        <Link href="/" className="flex items-center gap-2 shrink-0">
+          <img src="/logo-1.png" alt="Logo" className="h-10 w-auto" />
+          <span className="font-headline-sm md:font-headline-md text-headline-sm md:text-headline-md font-bold text-primary">Moebelmontage-Leipzig</span>
         </Link>
 
         <div className="hidden md:flex items-center gap-6 font-body-md text-body-md">
@@ -46,12 +48,15 @@ export default function Navbar() {
           })}
         </div>
 
-        <Link
-          href="/contact"
-          className="hidden md:inline-block bg-primary text-on-primary px-6 py-2 rounded-lg font-bold hover:bg-primary-container transition-colors scale-98 active:opacity-80 shrink-0"
+        <a
+          href="https://wa.me/49123456789"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="hidden md:inline-flex items-center gap-2 bg-[#25D366] text-white px-6 py-2 rounded-lg font-bold hover:bg-[#1DA851] transition-colors scale-98 active:opacity-80 shrink-0"
         >
-          Jetzt Buchen
-        </Link>
+          <FaWhatsapp className="text-xl" />
+          <span>Whatsapp schreiben</span>
+        </a>
 
         <button
           className="md:hidden flex items-center justify-center w-10 h-10 text-primary"
@@ -111,13 +116,16 @@ export default function Navbar() {
               </div>
 
               <div className="px-margin-mobile pb-8">
-                <Link
-                  href="/contact"
+                <a
+                  href="https://wa.me/49123456789"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   onClick={handleLinkClick}
-                  className="block w-full bg-primary text-on-primary text-center px-6 py-4 rounded-lg font-bold hover:bg-primary-container transition-colors"
+                  className="flex items-center justify-center gap-2 w-full bg-[#25D366] text-white text-center px-6 py-4 rounded-lg font-bold hover:bg-[#1DA851] transition-colors"
                 >
-                  Jetzt Buchen
-                </Link>
+                  <FaWhatsapp className="text-xl" />
+                  <span>Whatsapp schreiben</span>
+                </a>
               </div>
             </motion.div>
           </>
