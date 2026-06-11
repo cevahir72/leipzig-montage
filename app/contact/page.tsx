@@ -1,78 +1,9 @@
-"use client";
-
-import Link from "next/link";
-import { useState } from "react";
 import { FaWhatsapp } from "react-icons/fa";
 import SlideIn from "@/components/SlideIn";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
-function StepperDot({
-  step,
-  label,
-  currentStep,
-  onGoToStep,
-}: {
-  step: number;
-  label: string;
-  currentStep: number;
-  onGoToStep: (step: number) => void;
-}) {
-  const isDone = step < currentStep;
-  const isActive = step === currentStep;
-
-  return (
-    <div
-      className="flex flex-col items-center gap-2 group cursor-pointer"
-      onClick={() => onGoToStep(step)}
-    >
-      <div
-        className={`w-10 h-10 rounded-full flex items-center justify-center transition-all duration-300 ${
-          isDone || isActive
-            ? "bg-primary text-on-primary"
-            : "bg-surface-container-highest text-secondary"
-        }`}
-      >
-        {isDone ? (
-          <span className="material-symbols-outlined">check</span>
-        ) : (
-          step
-        )}
-      </div>
-      <span
-        className={`font-label-caps ${
-          isDone || isActive ? "text-primary" : "text-secondary"
-        }`}
-      >
-        {label}
-      </span>
-    </div>
-  );
-}
-
 export default function Contact() {
-  const [currentStep, setCurrentStep] = useState(1);
-  const [calculating, setCalculating] = useState(false);
-  const [dismantle, setDismantle] = useState<"yes" | "no" | null>(null);
-
-  const goToStep = (step: number) => {
-    setCurrentStep(step);
-    setTimeout(() => {
-      document.getElementById("ai-quote-form")?.scrollIntoView({
-        behavior: "smooth",
-        block: "center",
-      });
-    }, 50);
-  };
-
-  const calculateQuote = () => {
-    setCalculating(true);
-    setTimeout(() => {
-      setCalculating(false);
-      goToStep(3);
-    }, 1500);
-  };
-
   return (
     <>
       <Navbar />
@@ -92,241 +23,26 @@ export default function Contact() {
       <main className="pb-24 px-margin-mobile md:px-0 max-w-[1200px] mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-gutter">
           <SlideIn direction="left" delay={0} className="lg:col-span-8 bg-surface-container-lowest border border-outline-variant rounded-xl p-6 md:p-10 ai-glow">
-            <div className="flex items-center justify-between mb-12 max-w-md mx-auto">
-              <StepperDot step={1} label="ANALYSE" currentStep={currentStep} onGoToStep={goToStep} />
-              <div className="flex-1 h-0.5 bg-outline-variant mx-2 -mt-6" />
-              <StepperDot step={2} label="DETAILS" currentStep={currentStep} onGoToStep={goToStep} />
-              <div className="flex-1 h-0.5 bg-outline-variant mx-2 -mt-6" />
-              <StepperDot step={3} label="SCHÄTZUNG" currentStep={currentStep} onGoToStep={goToStep} />
-            </div>
-
-            <form
-              id="ai-quote-form"
-              onSubmit={(e) => {
-                e.preventDefault();
-                alert(
-                  "Ihre Angebotsanfrage wurde erfolgreich empfangen! Unsere Berater werden sich innerhalb von 2 Stunden bei Ihnen melden."
-                );
-              }}
-            >
-              {currentStep === 1 && (
-                <div className="step-transition" id="step-1">
-                  <h2 className="font-headline-md text-headline-md text-primary mb-4 text-center">
-                    Beschreiben Sie Ihre Möbel
-                  </h2>
-                  <p className="text-secondary text-center mb-8">
-                    Laden Sie Produktfotos hoch oder geben Sie IKEA Produktcodes ein.
-                  </p>
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                    <div className="border-2 border-dashed border-outline-variant rounded-xl p-8 flex flex-col items-center justify-center hover:border-primary transition-colors cursor-pointer bg-surface-container-low group">
-                      <span className="material-symbols-outlined text-4xl text-outline group-hover:text-primary mb-4">
-                        cloud_upload
-                      </span>
-                      <p className="font-label-caps text-secondary text-center">FOTOS HOCHLADEN</p>
-                      <p className="text-xs text-outline mt-2">JPG, PNG oder PDF</p>
-                      <input className="hidden" type="file" />
-                    </div>
-                    <div className="space-y-4">
-                      <div>
-                          <label className="font-label-caps text-secondary mb-2 block">
-                            IKEA PRODUKTCODE / LINK
-                          </label>
-                          <input
-                            className="w-full bg-white border border-outline-variant p-4 rounded-lg"
-                            placeholder="z.B. 802.130.74 oder Link"
-                            type="text"
-                          />
-                      </div>
-                      <div>
-                        <label className="font-label-caps text-secondary mb-2 block">
-                            PLANUNGSCODE (PAX/METOD)
-                          </label>
-                          <input
-                            className="w-full bg-white border border-outline-variant p-4 rounded-lg"
-                            placeholder="z.B. LXZY92"
-                            type="text"
-                          />
-                      </div>
-                    </div>
-                  </div>
-                  <div className="mt-10 flex justify-end">
-                    <button
-                      className="bg-primary text-on-primary px-10 py-4 rounded-lg font-label-caps hover:bg-primary-container flex items-center gap-2 group"
-                      type="button"
-                      onClick={() => goToStep(2)}
-                    >
-                      NÄCHSTER SCHRITT
-                      <span className="material-symbols-outlined group-hover:translate-x-1 transition-transform">
-                        arrow_forward
-                      </span>
-                    </button>
-                  </div>
-                </div>
-              )}
-
-              {currentStep === 2 && (
-                <div className="step-transition" id="step-2">
-                  <h2 className="font-headline-md text-headline-md text-primary mb-8 text-center">
-                    Legen Sie die Servicedetails fest
-                  </h2>
-                  <div className="space-y-6 max-w-xl mx-auto">
-                    <div className="flex items-center justify-between p-4 bg-white border border-outline-variant rounded-lg">
-                      <div>
-                        <p className="font-body-md font-bold text-primary">
-                          Ist ein Abbau alter Möbel erforderlich?
-                        </p>
-                        <p className="text-sm text-secondary">
-                          Wir können Ihre vorhandenen Möbel sicher demontieren.
-                        </p>
-                      </div>
-                      <div className="flex bg-surface-container rounded-full p-1">
-                        <button
-                          className={`px-4 py-1 rounded-full text-sm font-bold ${
-                            dismantle === "yes"
-                              ? "bg-primary text-on-primary"
-                              : "text-secondary"
-                          }`}
-                          type="button"
-                          onClick={() => setDismantle("yes")}
-                        >
-                          Ja
-                        </button>
-                        <button
-                          className={`px-4 py-1 rounded-full text-sm font-bold ${
-                            dismantle === "no"
-                              ? "bg-primary text-on-primary"
-                              : "text-secondary"
-                          }`}
-                          type="button"
-                          onClick={() => setDismantle("no")}
-                        >
-                          Nein
-                        </button>
-                      </div>
-                    </div>
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                      <div>
-                        <label className="font-label-caps text-secondary mb-2 block">
-                          ABHOLADRESSE (OPTIONAL)
-                        </label>
-                        <input
-                          className="w-full bg-white border border-outline-variant p-4 rounded-lg"
-                          placeholder="Geschäft oder Lager"
-                          type="text"
-                        />
-                      </div>
-                      <div>
-                        <label className="font-label-caps text-secondary mb-2 block">
-                          LIEFERADRESSE
-                        </label>
-                        <input
-                          className="w-full bg-white border border-outline-variant p-4 rounded-lg"
-                          placeholder="Ort der Montage"
-                          type="text"
-                        />
-                      </div>
-                    </div>
-                    <div>
-                      <label className="font-label-caps text-secondary mb-2 block">STOCKWERK</label>
-                      <select className="w-full bg-white border border-outline-variant p-4 rounded-lg appearance-none">
-                        <option>EG (Erdgeschoss)</option>
-                        <option>1. OG</option>
-                        <option>2. OG</option>
-                        <option>3. OG</option>
-                        <option>Höher (mit Aufzug)</option>
-                        <option>Höher (ohne Aufzug)</option>
-                      </select>
-                    </div>
-                  </div>
-                  <div className="mt-10 flex justify-between">
-                    <button
-                      className="text-primary font-label-caps flex items-center gap-2"
-                      type="button"
-                      onClick={() => goToStep(1)}
-                    >
-                      <span className="material-symbols-outlined">arrow_back</span>
-                      ZURÜCK
-                    </button>
-                    <button
-                      className="bg-primary text-on-primary px-10 py-4 rounded-lg font-label-caps hover:bg-primary-container flex items-center gap-2 group"
-                      type="button"
-                      onClick={calculateQuote}
-                      disabled={calculating}
-                    >
-                      {calculating ? (
-                        <>
-                          <span className="material-symbols-outlined animate-spin">refresh</span>
-                          ANALYSE LÄUFT...
-                        </>
-                      ) : (
-                        <>
-                          BERECHNEN &amp; SCHÄTZUNG
-                          <span className="material-symbols-outlined group-hover:scale-110 transition-transform">
-                            auto_awesome
-                          </span>
-                        </>
-                      )}
-                    </button>
-                  </div>
-                </div>
-              )}
-
-              {currentStep === 3 && (
-                <div className="step-transition" id="step-3">
-                  <h2 className="font-headline-md text-headline-md text-primary mb-8 text-center">
-                    Ihre Individuelle Preissschätzung
-                  </h2>
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
-                    <div className="bg-primary-container text-on-primary-container p-8 rounded-xl relative overflow-hidden">
-                      <div className="relative z-10">
-                        <p className="font-label-caps opacity-80 mb-2">UNSER GESCHÄTZTER PREIS</p>
-                        <div className="text-4xl font-bold mb-4">€185,00*</div>
-                        <p className="text-sm opacity-70 italic">
-                          *Das endgültige Angebot wird nach Prüfung übermittelt.
-                        </p>
-                      </div>
-                      <span className="material-symbols-outlined absolute -right-4 -bottom-4 text-9xl opacity-10">
-                        verified
-                      </span>
-                    </div>
-                    <div className="border border-outline-variant p-8 rounded-xl bg-white">
-                      <p className="font-label-caps text-secondary mb-4">MARKTVERGLEICH</p>
-                      <div className="flex items-center justify-between mb-4">
-                        <span className="text-secondary font-body-md">Taskrabbit Durchschnitt:</span>
-                        <span className="font-bold text-secondary line-through">€218,00</span>
-                      </div>
-                      <div className="flex items-center gap-2 text-primary font-bold bg-secondary-container p-3 rounded-lg">
-                        <span className="material-symbols-outlined">check_circle</span>
-                          <span>Wir sind 15 % günstiger.</span>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="bg-surface-container-high p-6 rounded-xl flex flex-col md:flex-row items-center gap-6 mb-12">
-                    <div className="flex-1">
-                      <h3 className="font-headline-md text-primary mb-2">Letzter Schritt: Bestätigung</h3>
-                      <p className="text-secondary">
-                        Übermitteln Sie diese Daten an unsere Experten und wir erstellen innerhalb von 2 Stunden ein verbindliches Angebot.
-                      </p>
-                    </div>
-                    <button
-                      className="w-full md:w-auto bg-primary text-on-primary px-8 py-5 rounded-lg font-label-caps hover:bg-primary-container shadow-lg shadow-primary-container/20 whitespace-nowrap active:scale-95 transition-all"
-                      type="submit"
-                    >
-                      FORMULAR AUSFÜLLEN, VERBINDLICHES ANGEBOT IN 2 STD.
-                    </button>
-                  </div>
-                  <div className="text-center">
-                    <button
-                      className="text-secondary font-label-caps hover:text-primary"
-                      type="button"
-                      onClick={() => goToStep(2)}
-                    >
-                      Informationen bearbeiten
-                    </button>
-                  </div>
-                </div>
-              )}
-            </form>
+            <iframe
+    src="https://api.centernex.com/widget/form/txEEsD82mithoIfhouTa"
+    style={{ width: "100%", height: "100%", border: "none", borderRadius: "3px" }}
+    id="inline-txEEsD82mithoIfhouTa" 
+    data-layout="{'id':'INLINE'}"
+    data-trigger-type="alwaysShow"
+    data-trigger-value=""
+    data-activation-type="alwaysActivated"
+    data-activation-value=""
+    data-deactivation-type="neverDeactivate"
+    data-deactivation-value=""
+    data-form-name="Contact Us"
+    data-height="914"
+    data-layout-iframe-id="inline-txEEsD82mithoIfhouTa"
+    data-form-id="txEEsD82mithoIfhouTa"
+    title="Contact Us"
+    
+        >
+</iframe>
+<script src="https://api.centernex.com/js/form_embed.js"></script>
 
           </SlideIn>
           <div className="lg:col-span-4 space-y-6">
