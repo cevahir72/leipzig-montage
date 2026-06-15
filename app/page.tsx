@@ -118,7 +118,7 @@ export default function Home() {
                 </Link>
               </SlideIn>
               <SlideIn direction="up" delay={0.1} className="md:col-span-2">
-                <Link href="/kitchen" className="bg-white border border-outline-variant p-8 flex items-center gap-8 group hover:shadow-xl transition-all duration-300 h-full cursor-pointer">
+                <Link href="/küche" className="bg-white border border-outline-variant p-8 flex items-center gap-8 group hover:shadow-xl transition-all duration-300 h-full cursor-pointer">
                   <div className="flex-1">
                     <h3 className="font-headline-md text-headline-md mb-2">Küchenmontage</h3>
                     <p className="text-secondary text-sm">Montage aller Küchenelemente und Einbau von Elektrogeräten.</p>
@@ -133,14 +133,14 @@ export default function Home() {
                 </Link>
               </SlideIn>
               <SlideIn direction="right" delay={0.2}>
-                <Link href="/office" className="bg-white border border-outline-variant p-8 group hover:shadow-xl transition-all duration-300 h-full cursor-pointer block">
+                <Link href="/büro" className="bg-white border border-outline-variant p-8 group hover:shadow-xl transition-all duration-300 h-full cursor-pointer block">
                   <span className="material-symbols-outlined text-primary text-4xl mb-4">business_center</span>
                   <h3 className="font-headline-md text-headline-md mb-2">Büromöbel</h3>
                   <p className="text-secondary text-sm">Professionelle Montage für effiziente Arbeitsplätze.</p>
                 </Link>
               </SlideIn>
               <SlideIn direction="up" delay={0.3}>
-                <Link href="/bedroom" className="bg-white border border-outline-variant p-8 group hover:shadow-xl transition-all duration-300 h-full cursor-pointer block">
+                <Link href="/schlafzimmer" className="bg-white border border-outline-variant p-8 group hover:shadow-xl transition-all duration-300 h-full cursor-pointer block">
                   <span className="material-symbols-outlined text-primary text-4xl mb-4">dresser</span>
                   <h3 className="font-headline-md text-headline-md mb-2">Schränke &amp; Garderoben</h3>
                   <p className="text-secondary text-sm">Sichere und ausgewogene Montage von Stauraumsystemen.</p>

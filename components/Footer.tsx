@@ -1,12 +1,12 @@
 import Link from "next/link";
 
 const services = [
-  { href: "/office", label: "Büro" },
-  { href: "/kitchen", label: "Küche" },
-  { href: "/bedroom", label: "Schlafzimmer" },
+  { href: "/büro", label: "Büro" },
+  { href: "/küche", label: "Küche" },
+  { href: "/schlafzimmer", label: "Schlafzimmer" },
   { href: "/montage", label: "Möbelmontage" },
-  { href: "/gallery", label: "Galerie" },
-  { href: "/about", label: "Über Uns" },
+  { href: "/galerie", label: "Galerie" },
+  { href: "/uberuns", label: "Über Uns" },
   { href: "/kontakt", label: "Kontakt" },
 ];
 

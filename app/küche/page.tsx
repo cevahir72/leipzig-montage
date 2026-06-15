@@ -5,7 +5,7 @@ import SlideIn from "@/components/SlideIn";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
-export default function Office() {
+export default function KüchePage() {
   return (
     <>
       <Navbar />
@@ -15,17 +15,17 @@ export default function Office() {
           <div className="absolute inset-0 z-0">
             <div className="absolute inset-0 bg-primary/40 z-10" />
             <img
-              alt="Office furniture assembly"
+              alt="Kitchen assembly"
               className="w-full h-full object-cover"
-              src="/office.webp"
+              src="/kitchen-1.webp"
             />
           </div>
           <SlideIn direction="left" delay={0} className="relative z-20 max-w-[1200px] mx-auto px-gutter w-full">
             <div className="max-w-2xl text-on-primary">
-              <span className="font-label-caps text-label-caps uppercase tracking-wider mb-4 block text-primary-fixed">Office Montage</span>
-              <h1 className="font-headline-xl text-headline-xl mb-6">Professionelle Büromontage</h1>
+              <span className="font-label-caps text-label-caps uppercase tracking-wider mb-4 block text-primary-fixed">Küchenmontage</span>
+              <h1 className="font-headline-xl text-headline-xl mb-6">Professionelle Küchenmontage</h1>
               <p className="font-body-lg text-body-lg text-inverse-on-surface opacity-90 border-l-4 border-primary-fixed pl-6">
-                Ergonomische und effiziente Arbeitsplatzlösungen für Ihr Unternehmen.
+                Maßgefertigte Küchenmontage mit technischer Präzision und Leidenschaft.
               </p>
             </div>
           </SlideIn>
@@ -38,22 +38,21 @@ export default function Office() {
                 <div className="relative group">
                   <div className="absolute -inset-4 bg-primary-fixed opacity-10 group-hover:opacity-20 transition-opacity duration-500 rounded-lg" />
                   <img
-                    alt="Office furniture montage"
+                    alt="Kitchen montage"
                     className="relative z-10 w-full h-auto rounded-lg shadow-xl"
-                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuCDH4tnfBGrifLs5vffyT-3V6NgZbicLEyR-kqomeY7dfymRHY1Ilr4iClX62Q2GfHm8ADfJWm5Dk-sn2Sw3lWlXA-uWuJPo-PQB-6HjouXVda1vpqxnMyDWZ02JFdRgpv3lM2Vjg5ap27I9x42w3ab4Bj_qihh1dtw5Fl2GHIa61hfth_LXBh_XxGsXMNmBfcuieycEYRJEju1rvNdEgSWiLl2y3pkymt61F6CTS2ofIryy97OsKZP1D8emYkOqdJmDBTZfXXWLzM"
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuAImBwL9FKyAqPfrxOfz7PzUkOLRtOvmfT5GBDKEianTKVLWF_z-9CULc5f2ccmqt0JOymnpC1vhYt2kpzyr_MK1ZiYTEDAlaF57MIYh-tt5talo7bhD-sdWA3Nk_243Ct35h1JgDo2Ryx7WszKKe_TJGC6xpQoeIXqC3A27npIjIs6gWBSyUG8k0d28uWvAViQY_89DwVii83YmLKR3vQ2n-NEaS7pzgaGZZs6SW_3pTNtiaFn8EQbm-lZnNTsU76rDjJb1AP43qc"
                   />
                 </div>
               </SlideIn>
               <SlideIn direction="right" delay={0.1}>
-                <h2 className="font-headline-lg text-headline-lg text-primary mb-8">Büromöbel Montage</h2>
+                <h2 className="font-headline-lg text-headline-lg text-primary mb-8">Küchenmontage vom Profi</h2>
                 <p className="font-body-lg text-body-lg text-on-surface-variant leading-relaxed mb-8">
-                  Wir montieren sämtliche Büromöbel – von einzelnen Schreibtischen bis zur kompletten
-                  Büroausstattung. Unsere Expertise umfasst ergonomische Arbeitsplätze,
-                  Besprechungsräume und Empfangstheken.
+                  Ob IKEA Metod, Küchenquelle, Höffner oder Maßanfertigung – wir montieren Ihre
+                  Küche fachgerecht inklusive Elektrogeräte, Armaturen und Wasseranschluss.
                 </p>
                 <div className="flex gap-4">
                   <span className="px-4 py-2 bg-secondary-container text-on-secondary-container font-label-caps text-label-caps rounded-full">Insurance Included</span>
-                  <span className="px-4 py-2 bg-secondary-container text-on-secondary-container font-label-caps text-label-caps rounded-full">24h Express</span>
+                  <span className="px-4 py-2 bg-secondary-container text-on-secondary-container font-label-caps text-label-caps rounded-full">Komplettservice</span>
                 </div>
               </SlideIn>
             </div>
@@ -62,7 +61,7 @@ export default function Office() {
 
         <section className="py-24 bg-surface-container-low">
           <div className="max-w-[1200px] mx-auto px-gutter text-center mb-16">
-            <h2 className="font-headline-lg text-headline-lg text-primary">Unsere Büro-Dienstleistungen</h2>
+            <h2 className="font-headline-lg text-headline-lg text-primary">Küchen-Dienstleistungen</h2>
             <div className="w-24 h-1 bg-primary mx-auto mt-4" />
           </div>
           <div className="max-w-[1200px] mx-auto px-gutter">
@@ -70,33 +69,33 @@ export default function Office() {
               <SlideIn direction="left" delay={0}>
                 <div className="bg-surface-container-lowest p-10 tonal-elevation text-center">
                   <div className="mb-6 flex justify-center">
-                    <span className="material-symbols-outlined text-primary text-5xl">desk</span>
+                    <span className="material-symbols-outlined text-primary text-5xl">cabinetry</span>
                   </div>
-                  <h3 className="font-headline-md text-headline-md text-primary mb-3">Schreibtische</h3>
+                  <h3 className="font-headline-md text-headline-md text-primary mb-3">Küchenschränke</h3>
                   <p className="font-body-md text-body-md text-on-surface-variant">
-                    Steh-Sitz-Schreibtische, Ecklösungen und höhenverstellbare Arbeitsplätze.
+                    Oberschränke, Unterschränke und Hochschränke millimetergenau montiert.
                   </p>
                 </div>
               </SlideIn>
               <SlideIn direction="up" delay={0.1}>
                 <div className="bg-surface-container-lowest p-10 tonal-elevation text-center">
                   <div className="mb-6 flex justify-center">
-                    <span className="material-symbols-outlined text-primary text-5xl">shelves</span>
+                    <span className="material-symbols-outlined text-primary text-5xl">countertops</span>
                   </div>
-                  <h3 className="font-headline-md text-headline-md text-primary mb-3">Regalsysteme</h3>
+                  <h3 className="font-headline-md text-headline-md text-primary mb-3">Arbeitsplatten</h3>
                   <p className="font-body-md text-body-md text-on-surface-variant">
-                    Aktenregale, Archivlösungen und modulare Aufbewahrungssysteme.
+                    Zuschnitt, Montage und Versiegelung von Arbeitsplatten aus Holz, Stein und Quarz.
                   </p>
                 </div>
               </SlideIn>
               <SlideIn direction="right" delay={0.2}>
                 <div className="bg-surface-container-lowest p-10 tonal-elevation text-center">
                   <div className="mb-6 flex justify-center">
-                    <span className="material-symbols-outlined text-primary text-5xl">meeting_room</span>
+                    <span className="material-symbols-outlined text-primary text-5xl">plumbing</span>
                   </div>
-                  <h3 className="font-headline-md text-headline-md text-primary mb-3">Konferenzräume</h3>
+                  <h3 className="font-headline-md text-headline-md text-primary mb-3">Geräte & Anschlüsse</h3>
                   <p className="font-body-md text-body-md text-on-surface-variant">
-                    Komplette Bestuhlung, Tischsysteme und Präsentationstechnik-Montage.
+                    Geschirrspüler, Herd, Kühlschrank und Dunstabzug inklusive Sanitäranschluss.
                   </p>
                 </div>
               </SlideIn>
@@ -106,13 +105,13 @@ export default function Office() {
 
         <section className="py-24 bg-primary text-on-primary">
           <div className="max-w-[1200px] mx-auto px-gutter text-center">
-            <h2 className="font-headline-xl text-headline-xl mb-6">Bereit für Ihr Büro-Projekt?</h2>
+            <h2 className="font-headline-xl text-headline-xl mb-6">Bereit für Ihre neue Küche?</h2>
             <p className="font-body-lg text-body-lg mb-10 opacity-80 max-w-xl mx-auto">
-              Lassen Sie uns gemeinsam Ihren perfekten Arbeitsplatz planen und montieren.
+              Verwandeln Sie Ihre Küche in einen Ort, an dem Kochen Freude macht.
             </p>
             <div className="flex flex-col sm:flex-row justify-center gap-6">
-              <Link href="/kontakt" className="bg-on-primary text-primary px-10 py-4 font-bold text-lg hover:bg-primary-fixed-dim transition-all">Kostenloses Angebot</Link>
-              <Link href="/#leistungen" className="border border-on-primary text-on-primary px-10 py-4 font-bold text-lg hover:bg-on-primary hover:text-primary transition-all">Unsere Leistungen</Link>
+              <Link href="/kontakt" className="bg-on-primary text-primary px-10 py-4 font-bold text-lg hover:bg-primary-fixed-dim transition-all">Get a Free Quote</Link>
+              <Link href="/" className="border border-on-primary text-on-primary px-10 py-4 font-bold text-lg hover:bg-on-primary hover:text-primary transition-all">Our Services</Link>
             </div>
           </div>
         </section>

@@ -3,7 +3,7 @@ import SlideIn from "@/components/SlideIn";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
-export default function Contact() {
+export default function KontaktPage() {
   return (
     <>
       <Navbar />

@@ -6,7 +6,7 @@ import SlideIn from "@/components/SlideIn";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
-export default function Gallery() {
+export default function GaleriePage() {
   const paxRef = useRef<HTMLDivElement>(null);
   const kitchenRef = useRef<HTMLDivElement>(null);
 

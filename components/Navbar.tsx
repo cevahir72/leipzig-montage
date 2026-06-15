@@ -7,11 +7,11 @@ import { motion, AnimatePresence } from "framer-motion";
 import { FaWhatsapp } from "react-icons/fa";
 
 const links = [
-  { href: "/office", label: "Büro" },
-  { href: "/kitchen", label: "Küche" },
-  { href: "/bedroom", label: "Schlafzimmer" },
-  { href: "/about", label: "Über Uns" },
-  { href: "/gallery", label: "Galerie" },
+  { href: "/büro", label: "Büro" },
+  { href: "/küche", label: "Küche" },
+  { href: "/schlafzimmer", label: "Schlafzimmer" },
+  { href: "/uberuns", label: "Über Uns" },
+  { href: "/galerie", label: "Galerie" },
   { href: "/kontakt", label: "Kontakt" },
 ];
 

@@ -5,7 +5,7 @@ import SlideIn from "@/components/SlideIn";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
-export default function About() {
+export default function UberunsPage() {
 
   return (
     <>
