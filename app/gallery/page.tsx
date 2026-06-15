@@ -249,7 +249,7 @@ export default function Gallery() {
                 </div>
               </SlideIn>
             </div>
-            <Link href="/contact" className="inline-block bg-white text-primary px-10 py-4 rounded-lg font-bold text-lg hover:bg-surface-container-highest transition-all shadow-xl">
+            <Link href="/kontakt" className="inline-block bg-white text-primary px-10 py-4 rounded-lg font-bold text-lg hover:bg-surface-container-highest transition-all shadow-xl">
               Kostenloses Angebot einholen
             </Link>
           </div>

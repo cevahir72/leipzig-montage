@@ -12,7 +12,7 @@ const links = [
   { href: "/bedroom", label: "Schlafzimmer" },
   { href: "/about", label: "Über Uns" },
   { href: "/gallery", label: "Galerie" },
-  { href: "/contact", label: "Kontakt" },
+  { href: "/kontakt", label: "Kontakt" },
 ];
 
 export default function Navbar() {

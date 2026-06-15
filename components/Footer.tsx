@@ -7,7 +7,7 @@ const services = [
   { href: "/montage", label: "Möbelmontage" },
   { href: "/gallery", label: "Galerie" },
   { href: "/about", label: "Über Uns" },
-  { href: "/contact", label: "Kontakt" },
+  { href: "/kontakt", label: "Kontakt" },
 ];
 
 export default function Footer() {
@@ -40,7 +40,11 @@ export default function Footer() {
               <span className="material-symbols-outlined text-2xl">work</span>
             </a>
           </div>
-          <p className="text-on-surface-variant text-sm mt-6">
+          <div className="flex gap-4 mt-4">
+            <Link href="/impressum" className="text-on-surface-variant text-sm hover:text-primary transition-colors">Impressum</Link>
+            <Link href="/datenschutz" className="text-on-surface-variant text-sm hover:text-primary transition-colors">Datenschutz</Link>
+          </div>
+          <p className="text-on-surface-variant text-sm mt-4">
             &copy; 2024 Moebelmontage-Leipzig. Alle Rechte vorbehalten.
           </p>
         </div>

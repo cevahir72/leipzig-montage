@@ -139,7 +139,7 @@ export default function About() {
                 höchster Präzision umsetzen.
               </p>
               <div className="flex flex-col sm:flex-row justify-center gap-6">
-                <Link href="/contact" className="bg-on-primary text-primary px-10 py-4 font-bold text-lg hover:bg-primary-fixed-dim transition-all">
+                <Link href="/kontakt" className="bg-on-primary text-primary px-10 py-4 font-bold text-lg hover:bg-primary-fixed-dim transition-all">
                   Get a Free Quote
                 </Link>
                 <Link href="/" className="border border-on-primary text-on-primary px-10 py-4 font-bold text-lg hover:bg-on-primary hover:text-primary transition-all">

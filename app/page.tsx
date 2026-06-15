@@ -68,7 +68,7 @@ export default function Home() {
               <p className="font-body-lg text-body-lg mb-8 opacity-90 max-w-xl">
                 Mit 11 Jahren Erfahrung und 7 Tagen die Woche erreichbar – Ihr zuverlässiger Partner für Möbelmontage in Leipzig und Umgebung.
               </p>
-              <Link href="/contact" className="inline-block bg-white text-primary px-8 py-4 rounded-lg font-bold text-lg hover:bg-surface-container transition-transform active:scale-95 shadow-lg">
+              <Link href="/kontakt" className="inline-block bg-white text-primary px-8 py-4 rounded-lg font-bold text-lg hover:bg-surface-container transition-transform active:scale-95 shadow-lg">
                 Kostenloses Angebot
               </Link>
             </div>
