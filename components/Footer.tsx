@@ -21,15 +21,15 @@ export default function Footer() {
           <div className="space-y-3 text-secondary">
             <p className="flex items-center gap-3">
               <span className="material-symbols-outlined text-primary text-xl">location_on</span>
-              Musterstraße 123, 04109 Leipzig
+              Klingenstraße 30a, Plagwitz, 04229 Leipzig
             </p>
             <p className="flex items-center gap-3">
               <span className="material-symbols-outlined text-primary text-xl">call</span>
-              <a href="tel:+49123456789" className="hover:text-primary transition-colors">+49 123 456789</a>
+              <a href="tel:+491773999476" className="hover:text-primary transition-colors">+49 177 3999476</a>
             </p>
             <p className="flex items-center gap-3">
               <span className="material-symbols-outlined text-primary text-xl">mail</span>
-              <a href="mailto:info@moebelmontage-leipzig.de" className="hover:text-primary transition-colors">info@moebelmontage-leipzig.de</a>
+              <a href="mailto:info@möbelmontageleipzig.com" className="hover:text-primary transition-colors">info@möbelmontageleipzig.com</a>
             </p>
           </div>
           <div className="flex gap-4 mt-6">

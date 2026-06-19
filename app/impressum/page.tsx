@@ -35,17 +35,17 @@ export default function Impressum() {
                   <h2 className="font-headline-lg text-headline-lg text-primary mb-4">Angaben gemäß § 5 TMG</h2>
                   <p className="mb-2">
                     Möbelmontage Leipzig<br />
-                    Inhaber: [Vorname Nachname]<br />
-                    Musterstraße 123<br />
-                    04109 Leipzig
+                    Inhaber: Erdem Kaya<br />
+                    Klingenstraße 30a, Plagwitz<br />
+                    04229 Leipzig
                   </p>
                 </div>
 
                 <div>
                   <h3 className="font-headline-md text-headline-md text-primary mb-3">Kontakt</h3>
                   <p>
-                    Telefon: +49 123 456789<br />
-                    E-Mail: info@moebelmontage-leipzig.de
+                    Telefon: +49 177 3999476<br />
+                    E-Mail: info@möbelmontageleipzig.com
                   </p>
                 </div>
 
@@ -53,16 +53,16 @@ export default function Impressum() {
                   <h3 className="font-headline-md text-headline-md text-primary mb-3">Umsatzsteuer-ID</h3>
                   <p>
                     Umsatzsteuer-Identifikationsnummer gemäß § 27 a Umsatzsteuergesetz:<br />
-                    DE [XXXXX]
+                    DE334778517
                   </p>
                 </div>
 
                 <div>
                   <h3 className="font-headline-md text-headline-md text-primary mb-3">Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV</h3>
                   <p>
-                    [Vorname Nachname]<br />
-                    Musterstraße 123<br />
-                    04109 Leipzig
+                    Erdem Kaya<br />
+                    Klingenstraße 30a, Plagwitz<br />
+                    04229 Leipzig
                   </p>
                 </div>
 

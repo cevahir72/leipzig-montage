@@ -303,14 +303,14 @@ export default function Home() {
                       <span className="material-symbols-outlined text-3xl">call</span>
                       <div>
                         <p className="font-label-caps uppercase text-sm opacity-60">Schnelle Kontaktaufnahme</p>
-                        <p className="text-xl font-bold">+49 (0) 123 456 789</p>
+                        <p className="text-xl font-bold">+49 177 3999476</p>
                       </div>
                     </div>
                     <div className="flex items-start gap-4">
                       <span className="material-symbols-outlined text-3xl">mail</span>
                       <div>
                         <p className="font-label-caps uppercase text-sm opacity-60">E-Mail</p>
-                        <p className="text-xl font-bold">info@leipzig-montage.de</p>
+                        <p className="text-xl font-bold">info@möbelmontageleipzig.com</p>
                       </div>
                     </div>
                     <div className="flex items-start gap-4">
@@ -383,9 +383,9 @@ export default function Home() {
                 </div>
                 <p className="italic text-on-surface-variant mb-6 flex-1">&quot;Ich habe Hilfe bei der Montage meines IKEA Pax Schranks bekommen. Sehr professionelles Team, pünktlich gekommen und die Montage war einwandfrei. Danke!&quot;</p>
                 <div className="flex items-center gap-3">
-                  <div className="w-10 h-10 rounded-full bg-primary-container flex items-center justify-center text-on-primary-container font-bold">A</div>
+                  <div className="w-10 h-10 rounded-full bg-primary-container flex items-center justify-center text-on-primary-container font-bold">T</div>
                   <div>
-                    <p className="font-bold text-primary">Ahmet Y.</p>
+                    <p className="font-bold text-primary">Thomas W.</p>
                     <p className="text-sm text-secondary">Leipzig Zentrum</p>
                   </div>
                 </div>
@@ -402,9 +402,9 @@ export default function Home() {
                 </div>
                 <p className="italic text-on-surface-variant mb-6 flex-1">&quot;Sie haben die gesamte Küche in meiner neuen Wohnung montiert. Die Festpreisgarantie ist großartig, keine Überraschungen hinterher. Sehr empfehlenswert.&quot;</p>
                 <div className="flex items-center gap-3">
-                  <div className="w-10 h-10 rounded-full bg-primary-container flex items-center justify-center text-on-primary-container font-bold">M</div>
+                  <div className="w-10 h-10 rounded-full bg-primary-container flex items-center justify-center text-on-primary-container font-bold">S</div>
                   <div>
-                    <p className="font-bold text-primary">Merve S.</p>
+                    <p className="font-bold text-primary">Sabine M.</p>
                     <p className="text-sm text-secondary">Grünau</p>
                   </div>
                 </div>
@@ -421,9 +421,9 @@ export default function Home() {
                 </div>
                 <p className="italic text-on-surface-variant mb-6 flex-1">&quot;Die Montage unserer Büromöbel war sehr schnell. Sie arbeiten wirklich sauber und gewissenhaft. Preis-Leistung 10/10.&quot;</p>
                 <div className="flex items-center gap-3">
-                  <div className="w-10 h-10 rounded-full bg-primary-container flex items-center justify-center text-on-primary-container font-bold">C</div>
+                  <div className="w-10 h-10 rounded-full bg-primary-container flex items-center justify-center text-on-primary-container font-bold">K</div>
                   <div>
-                    <p className="font-bold text-primary">Can K.</p>
+                    <p className="font-bold text-primary">Klaus S.</p>
                     <p className="text-sm text-secondary">Connewitz</p>
                   </div>
                 </div>
