@@ -1,7 +1,8 @@
-import { FaWhatsapp } from "react-icons/fa";
+
 import SlideIn from "@/components/SlideIn";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import Script from "next/script";
 
 export default function KontaktPage() {
   return (
@@ -100,15 +101,8 @@ export default function KontaktPage() {
 
       <Footer />
 
-      <a
-        className="fixed bottom-8 right-8 z-[60] bg-[#25D366] text-white flex items-center gap-3 px-6 py-4 rounded-full shadow-2xl hover:scale-105 active:scale-95 transition-all group"
-        href="https://wa.me/49123456789"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        <FaWhatsapp className="text-2xl" />
-        <span className="font-bold">WhatsApp – Jetzt Fragen</span>
-      </a>
+      <div data-chat-widget data-widget-id="6a43ec3f55ef5e64139c329c" data-location-id="e39iT4786XKRpq8l9uga"></div>
+      <Script src="https://widgets.leadconnectorhq.com/loader.js" data-resources-url="https://widgets.leadconnectorhq.com/chat-widget/loader.js" data-widget-id="6a43ec3f55ef5e64139c329c" strategy="lazyOnload" />
     </>
   );
 }
