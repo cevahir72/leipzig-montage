@@ -4,6 +4,7 @@ import Link from "next/link";
 import SlideIn from "@/components/SlideIn";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import FlashyCTA from "@/components/FlashyCTA";
 
 export default function UberunsPage() {
 
@@ -11,7 +12,7 @@ export default function UberunsPage() {
     <>
       <Navbar />
 
-      <main>
+      <main className="flex-1">
         <section className="relative h-[600px] flex items-center overflow-hidden">
           <div className="absolute inset-0 z-0">
             <div className="absolute inset-0 bg-primary/40 z-10" />
@@ -139,9 +140,7 @@ export default function UberunsPage() {
                 höchster Präzision umsetzen.
               </p>
               <div className="flex flex-col sm:flex-row justify-center gap-6">
-                <Link href="/kontakt" className="bg-on-primary text-primary px-10 py-4 font-bold text-lg hover:bg-primary-fixed-dim transition-all">
-                  Get a Free Quote
-                </Link>
+                <FlashyCTA href="/kontakt" variant="primary">Get a Free Quote</FlashyCTA>
                 <Link href="/" className="border border-on-primary text-on-primary px-10 py-4 font-bold text-lg hover:bg-on-primary hover:text-primary transition-all">
                   Unsere Services
                 </Link>

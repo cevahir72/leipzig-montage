@@ -5,6 +5,7 @@ import { useRef } from "react";
 import SlideIn from "@/components/SlideIn";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import FlashyCTA from "@/components/FlashyCTA";
 
 export default function GaleriePage() {
   const paxRef = useRef<HTMLDivElement>(null);
@@ -28,7 +29,7 @@ export default function GaleriePage() {
     <>
       <Navbar />
 
-      <main className="flex-grow">
+      <main className="flex-1">
         <section className="py-16 bg-surface-container-low">
           <div className="max-w-[1200px] mx-auto px-gutter text-center">
             <span className="font-label-caps text-label-caps text-primary uppercase tracking-widest mb-4 block">
@@ -249,9 +250,9 @@ export default function GaleriePage() {
                 </div>
               </SlideIn>
             </div>
-            <Link href="/kontakt" className="inline-block bg-white text-primary px-10 py-4 rounded-lg font-bold text-lg hover:bg-surface-container-highest transition-all shadow-xl">
+            <FlashyCTA href="/kontakt" variant="light">
               Kostenloses Angebot einholen
-            </Link>
+            </FlashyCTA>
           </div>
         </section>
       </main>

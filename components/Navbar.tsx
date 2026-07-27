@@ -7,8 +7,8 @@ import { motion, AnimatePresence } from "framer-motion";
 import { FaWhatsapp } from "react-icons/fa";
 
 const links = [
-  { href: "/büro", label: "Büro" },
-  { href: "/küche", label: "Küche" },
+  { href: "/buero", label: "Büro" },
+  { href: "/kuche", label: "Küche" },
   { href: "/schlafzimmer", label: "Schlafzimmer" },
   { href: "/uberuns", label: "Über Uns" },
   { href: "/galerie", label: "Galerie" },
@@ -49,7 +49,7 @@ export default function Navbar() {
         </div>
 
         <a
-          href="https://wa.me/49123456789"
+          href="https://wa.me/491773999476"
           target="_blank"
           rel="noopener noreferrer"
           className="hidden md:inline-flex items-center gap-2 bg-[#25D366] text-white px-6 py-2 rounded-lg font-bold hover:bg-[#1DA851] transition-colors scale-98 active:opacity-80 shrink-0"
@@ -117,7 +117,7 @@ export default function Navbar() {
 
               <div className="px-margin-mobile pb-8">
                 <a
-                  href="https://wa.me/49123456789"
+                  href="https://wa.me/491773999476"
                   target="_blank"
                   rel="noopener noreferrer"
                   onClick={handleLinkClick}

@@ -1,16 +1,18 @@
 "use client";
 
 import Link from "next/link";
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import LogoSlider from "@/components/LogoSlider";
 import SlideIn from "@/components/SlideIn";
 import RelatedTopics from "@/components/RelatedTopics";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import FlashyCTA from "@/components/FlashyCTA";
 
 export default function Home() {
   useEffect(() => {
     const inputs = document.querySelectorAll("input, select, textarea");
+    const anchors = document.querySelectorAll('a[href^="#"]');
     const handleFocus = (e: Event) => {
       const input = e.target as HTMLElement;
       input.parentElement?.classList.add("text-primary");
@@ -25,22 +27,28 @@ export default function Home() {
       input.addEventListener("blur", handleBlur);
     });
 
-    document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
-      anchor.addEventListener("click", (e) => {
-        e.preventDefault();
-        const targetId = anchor.getAttribute("href");
-        if (targetId === "#" || !targetId) return;
-        const target = document.querySelector(targetId);
-        if (target) {
-          target.scrollIntoView({ behavior: "smooth" });
-        }
-      });
+    const handleAnchorClick = (e: Event) => {
+      e.preventDefault();
+      const anchor = e.currentTarget as HTMLAnchorElement;
+      const targetId = anchor.getAttribute("href");
+      if (targetId === "#" || !targetId) return;
+      const target = document.querySelector(targetId);
+      if (target) {
+        target.scrollIntoView({ behavior: "smooth" });
+      }
+    };
+
+    anchors.forEach((anchor) => {
+      anchor.addEventListener("click", handleAnchorClick);
     });
 
     return () => {
       inputs.forEach((input) => {
         input.removeEventListener("focus", handleFocus);
         input.removeEventListener("blur", handleBlur);
+      });
+      anchors.forEach((anchor) => {
+        anchor.removeEventListener("click", handleAnchorClick);
       });
     };
   }, []);
@@ -49,7 +57,7 @@ export default function Home() {
     <>
       <Navbar />
 
-      <main className="flex-grow">
+      <main className="flex-1">
         <section className="relative h-[600px] flex items-center overflow-hidden">
           <div className="absolute inset-0 z-0">
             <img
@@ -57,20 +65,20 @@ export default function Home() {
               className="w-full h-full object-cover"
               src="/screen.webp"
             />
-            <div className="absolute inset-0 bg-primary/40" />
+            <div className="absolute inset-0 bg-gradient-to-b from-primary/40 via-primary/60 to-primary/80" />
           </div>
           <div className="relative z-10 max-w-[1200px] mx-auto px-margin-mobile md:px-0 w-full text-white">
-            <div className="max-w-3xl">
+            <div className="max-w-3xl mx-auto text-center">
               <h1 className="font-headline-xl-mobile md:font-headline-xl text-headline-xl-mobile md:text-headline-xl mb-6 leading-tight">
                 Möbelmontage in Leipzig:{" "}
                 <span className="block">Professionell, Schnell und mit Festpreisgarantie!</span>
               </h1>
-              <p className="font-body-lg text-body-lg mb-8 opacity-90 max-w-xl">
+              <p className="font-body-lg text-body-lg mb-8 opacity-90 max-w-xl mx-auto">
                 Mit 11 Jahren Erfahrung und 7 Tagen die Woche erreichbar – Ihr zuverlässiger Partner für Möbelmontage in Leipzig und Umgebung.
               </p>
-              <Link href="/kontakt" className="inline-block bg-white text-primary px-8 py-4 rounded-lg font-bold text-lg hover:bg-surface-container transition-transform active:scale-95 shadow-lg">
+              <FlashyCTA href="/kontakt" variant="light">
                 Kostenloses Angebot
-              </Link>
+              </FlashyCTA>
             </div>
           </div>
         </section>
@@ -118,7 +126,7 @@ export default function Home() {
                 </Link>
               </SlideIn>
               <SlideIn direction="up" delay={0.1} className="md:col-span-2">
-                <Link href="/küche" className="bg-white border border-outline-variant p-8 flex items-center gap-8 group hover:shadow-xl transition-all duration-300 h-full cursor-pointer">
+                <Link href="/kuche" className="bg-white border border-outline-variant p-8 flex items-center gap-8 group hover:shadow-xl transition-all duration-300 h-full cursor-pointer">
                   <div className="flex-1">
                     <h3 className="font-headline-md text-headline-md mb-2">Küchenmontage</h3>
                     <p className="text-secondary text-sm">Montage aller Küchenelemente und Einbau von Elektrogeräten.</p>
@@ -133,7 +141,7 @@ export default function Home() {
                 </Link>
               </SlideIn>
               <SlideIn direction="right" delay={0.2}>
-                <Link href="/büro" className="bg-white border border-outline-variant p-8 group hover:shadow-xl transition-all duration-300 h-full cursor-pointer block">
+                <Link href="/buero" className="bg-white border border-outline-variant p-8 group hover:shadow-xl transition-all duration-300 h-full cursor-pointer block">
                   <span className="material-symbols-outlined text-primary text-4xl mb-4">business_center</span>
                   <h3 className="font-headline-md text-headline-md mb-2">Büromöbel</h3>
                   <p className="text-secondary text-sm">Professionelle Montage für effiziente Arbeitsplätze.</p>
@@ -147,7 +155,7 @@ export default function Home() {
                 </Link>
               </SlideIn>
               <SlideIn direction="up" delay={0.4} className="md:col-span-4">
-                <Link href="/services" className="bg-white border border-outline-variant p-8 group hover:shadow-xl transition-all duration-300 h-full cursor-pointer block">
+                <Link href="/kontakt" className="bg-white border border-outline-variant p-8 group hover:shadow-xl transition-all duration-300 h-full cursor-pointer block">
                   <span className="material-symbols-outlined text-primary text-4xl mb-4">build</span>
                   <h3 className="font-headline-md text-headline-md mb-2">Sonstige Dienstleistungen</h3>
                   <p className="text-secondary text-sm">Darüber hinaus übernehmen wir auch die Montage aller anderen Möbelstücke</p>
@@ -350,7 +358,7 @@ export default function Home() {
                     </div>
                     <a
                       className="w-full bg-[#25D366] text-white h-14 font-bold hover:brightness-110 transition-all uppercase tracking-widest flex items-center justify-center gap-3"
-                      href="https://wa.me/49123456789"
+                      href="https://wa.me/491773999476"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
@@ -363,9 +371,8 @@ export default function Home() {
             </SlideIn>
           </div>
         </section>
-      </main>
 
-      <section className="py-24 bg-white">
+        <section className="py-24 bg-white">
         <div className="max-w-[1200px] mx-auto px-margin-mobile md:px-0">
           <div className="text-center mb-16">
             <h2 className="font-headline-lg text-headline-lg text-primary mb-4">Was sagen unsere Kunden?</h2>
@@ -432,6 +439,7 @@ export default function Home() {
           </div>
         </div>
       </section>
+      </main>
 
       <Footer />
     </>

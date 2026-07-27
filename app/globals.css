@@ -214,6 +214,85 @@ input[type="range"].slider-input {
   transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+@keyframes cta-shimmer {
+  0% { transform: translateX(-100%) skewX(-15deg); }
+  100% { transform: translateX(400%) skewX(-15deg); }
+}
+
+@keyframes cta-pulse {
+  0%, 100% { box-shadow: 0 0 18px rgba(249, 115, 22, 0.15), 0 0 0 2px rgba(249, 115, 22, 0.3); }
+  50% { box-shadow: 0 0 40px rgba(249, 115, 22, 0.35), 0 0 60px rgba(249, 115, 22, 0.15), 0 0 0 2px rgba(249, 115, 22, 0.6); }
+}
+
+@keyframes cta-pulse-light {
+  0%, 100% { box-shadow: 0 8px 32px rgba(249, 115, 22, 0.2), 0 0 0 2px rgba(249, 115, 22, 0.25); }
+  50% { box-shadow: 0 8px 48px rgba(249, 115, 22, 0.4), 0 0 60px rgba(249, 115, 22, 0.15), 0 0 0 2px rgba(249, 115, 22, 0.5); }
+}
+
+@keyframes cta-sparkle {
+  0%, 100% { opacity: 0; transform: scale(0); }
+  50% { opacity: 1; transform: scale(1); }
+}
+
+@keyframes cta-float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(5px); }
+}
+
+.cta-shimmer {
+  position: relative;
+  isolation: isolate;
+}
+
+.cta-shimmer::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, transparent 0%, rgba(255,255,255,0.35) 50%, transparent 100%);
+  background-size: 200% 100%;
+  animation: cta-shimmer 3s ease-in-out infinite;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.cta-shimmer-dark::after {
+  background: linear-gradient(90deg, transparent 0%, rgba(167, 200, 255, 0.25) 50%, transparent 100%);
+}
+
+.cta-glow {
+  animation: cta-pulse 3s ease-in-out infinite;
+}
+
+.cta-glow-light {
+  animation: cta-pulse-light 3s ease-in-out infinite;
+}
+
+.cta-sparkle-container {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.cta-sparkle {
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: white;
+  animation: cta-sparkle 1.5s ease-in-out infinite;
+}
+
+.cta-sparkle:nth-child(1) { top: 10%; left: 15%; animation-delay: 0s; }
+.cta-sparkle:nth-child(2) { top: 20%; right: 25%; animation-delay: 0.3s; }
+.cta-sparkle:nth-child(3) { bottom: 25%; left: 20%; animation-delay: 0.6s; }
+.cta-sparkle:nth-child(4) { bottom: 15%; right: 15%; animation-delay: 0.9s; }
+.cta-sparkle:nth-child(5) { top: 45%; left: 10%; animation-delay: 1.2s; }
+
+.cta-float {
+  animation: cta-float 2s ease-in-out infinite;
+}
+
 @keyframes marquee {
   0% {
     transform: translateX(0);

@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Hanken_Grotesk } from "next/font/google";
 import "./globals.css";
+import ChatWidget from "@/components/ChatWidget";
 
 const hankenGrotesk = Hanken_Grotesk({
   variable: "--font-hanken-grotesk",
@@ -35,6 +36,7 @@ export default function RootLayout({
       </head>
       <body className="bg-background font-body-md text-on-background min-h-screen flex flex-col">
         {children}
+        <ChatWidget />
       </body>
     </html>
   );

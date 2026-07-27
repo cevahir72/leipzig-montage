@@ -7,7 +7,7 @@ export default function NotFound() {
     <>
       <Navbar />
 
-      <main className="flex-grow flex items-center justify-center py-32 px-margin-mobile">
+      <main className="flex-1 flex items-center justify-center py-32 px-margin-mobile">
         <div className="text-center max-w-xl">
           <span className="inline-block py-1 px-3 bg-secondary-container text-on-secondary-container rounded-full font-label-caps mb-6">
             404

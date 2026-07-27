@@ -1,8 +1,8 @@
 import Link from "next/link";
 
 const services = [
-  { href: "/büro", label: "Büro" },
-  { href: "/küche", label: "Küche" },
+  { href: "/buero", label: "Büro" },
+  { href: "/kuche", label: "Küche" },
   { href: "/schlafzimmer", label: "Schlafzimmer" },
   { href: "/montage", label: "Möbelmontage" },
   { href: "/galerie", label: "Galerie" },

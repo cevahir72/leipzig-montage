@@ -7,7 +7,7 @@ export default function Datenschutz() {
     <>
       <Navbar />
 
-      <main>
+      <main className="flex-1">
         <section className="relative h-[400px] flex items-center overflow-hidden">
           <div className="absolute inset-0 z-0">
             <div className="absolute inset-0 bg-primary/40 z-10" />

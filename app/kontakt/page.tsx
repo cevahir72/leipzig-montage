@@ -1,10 +1,45 @@
+ 
+"use client";
 
+import { useEffect, useRef } from "react";
 import SlideIn from "@/components/SlideIn";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-import Script from "next/script";
 
 export default function KontaktPage() {
+  const formContainerRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const el = formContainerRef.current;
+    if (!el) return;
+
+    el.innerHTML = `
+      <div class="p-6 md:p-10">
+        <iframe
+          src="https://api.centernex.com/widget/form/txEEsD82mithoIfhouTa"
+          style="width:100%;height:914px;border:none;border-radius:3px"
+          id="inline-txEEsD82mithoIfhouTa"
+          data-layout="{'id':'INLINE'}"
+          data-trigger-type="alwaysShow"
+          data-trigger-value=""
+          data-activation-type="alwaysActivated"
+          data-activation-value=""
+          data-deactivation-type="neverDeactivate"
+          data-deactivation-value=""
+          data-form-name="Contact Us"
+          data-height="914"
+          data-layout-iframe-id="inline-txEEsD82mithoIfhouTa"
+          data-form-id="txEEsD82mithoIfhouTa"
+          title="Contact Us"
+        ></iframe>
+        <script src="https://api.centernex.com/js/form_embed.js"><\/script>
+      </div>
+    `;
+
+    return () => {
+      el.innerHTML = "";
+    };
+  }, []);
   return (
     <>
       <Navbar />
@@ -17,35 +52,15 @@ export default function KontaktPage() {
           Schnelles Angebot &amp; Kontakt
         </h1>
         <p className="font-body-lg text-body-lg text-secondary max-w-2xl mx-auto">
-          Erhalten Sie mit unserem KI-gestützten System in Sekunden eine Preissschätzung. Der zuverlässigste Partner für Möbelmontage in Leipzig.
+          Geben Sie Ihren IKEA-Code ein und wir melden uns sofort bei Ihnen mit einem Angebot – kein Warten nötig!
         </p>
       </header>
 
-      <main className="pb-24 px-margin-mobile md:px-0 max-w-[1200px] mx-auto">
+      <main className="flex-1 pb-24 px-margin-mobile md:px-0 max-w-[1200px] mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-gutter">
-          <SlideIn direction="left" delay={0} className="lg:col-span-8 bg-surface-container-lowest border border-outline-variant rounded-xl p-6 md:p-10 ai-glow">
-            <iframe
-    src="https://api.centernex.com/widget/form/txEEsD82mithoIfhouTa"
-    style={{ width: "100%", height: "100%", border: "none", borderRadius: "3px" }}
-    id="inline-txEEsD82mithoIfhouTa" 
-    data-layout="{'id':'INLINE'}"
-    data-trigger-type="alwaysShow"
-    data-trigger-value=""
-    data-activation-type="alwaysActivated"
-    data-activation-value=""
-    data-deactivation-type="neverDeactivate"
-    data-deactivation-value=""
-    data-form-name="Contact Us"
-    data-height="914"
-    data-layout-iframe-id="inline-txEEsD82mithoIfhouTa"
-    data-form-id="txEEsD82mithoIfhouTa"
-    title="Contact Us"
-    
-        >
-</iframe>
-<script src="https://api.centernex.com/js/form_embed.js"></script>
-
-          </SlideIn>
+          <div className="lg:col-span-8 bg-surface-container-lowest border-2 border-[#F97316] rounded-xl cta-glow-light">
+            <div ref={formContainerRef} />
+          </div>
           <div className="lg:col-span-4 space-y-6">
             <SlideIn direction="right" delay={0.1}>
             <div className="bg-white border border-outline-variant rounded-xl p-6">
@@ -100,9 +115,6 @@ export default function KontaktPage() {
       </main>
 
       <Footer />
-
-      <div data-chat-widget data-widget-id="6a43ec3f55ef5e64139c329c" data-location-id="e39iT4786XKRpq8l9uga"></div>
-      <Script src="https://widgets.leadconnectorhq.com/loader.js" data-resources-url="https://widgets.leadconnectorhq.com/chat-widget/loader.js" data-widget-id="6a43ec3f55ef5e64139c329c" strategy="lazyOnload" />
     </>
   );
 }
