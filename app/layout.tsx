@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
+import Script from "next/script";
 import { Hanken_Grotesk } from "next/font/google";
 import "./globals.css";
-import ChatWidget from "@/components/ChatWidget";
 
 const hankenGrotesk = Hanken_Grotesk({
   variable: "--font-hanken-grotesk",
@@ -36,7 +36,12 @@ export default function RootLayout({
       </head>
       <body className="bg-background font-body-md text-on-background min-h-screen flex flex-col">
         {children}
-        <ChatWidget />
+        <Script
+          src="https://widgets.leadconnectorhq.com/loader.js"
+          data-resources-url="https://widgets.leadconnectorhq.com/chat-widget/loader.js"
+          data-widget-id="6a43ec3f55ef5e64139c329c"
+          strategy="lazyOnload"
+        />
       </body>
     </html>
   );
