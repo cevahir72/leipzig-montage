@@ -25,7 +25,7 @@ export default function Footer() {
             </p>
             <p className="flex items-center gap-3">
               <span className="material-symbols-outlined text-primary text-xl">call</span>
-              <a href="tel:+491773999476" className="hover:text-primary transition-colors">+49 177 3999476</a>
+              <a href="tel:+4934160823667" className="hover:text-primary transition-colors">+49 341 60823667</a>
             </p>
             <p className="flex items-center gap-3">
               <span className="material-symbols-outlined text-primary text-xl">mail</span>

@@ -311,7 +311,7 @@ export default function Home() {
                       <span className="material-symbols-outlined text-3xl">call</span>
                       <div>
                         <p className="font-label-caps uppercase text-sm opacity-60">Schnelle Kontaktaufnahme</p>
-                        <p className="text-xl font-bold">+49 177 3999476</p>
+                        <p className="text-xl font-bold">+49 341 60823667</p>
                       </div>
                     </div>
                     <div className="flex items-start gap-4">

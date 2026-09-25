@@ -44,7 +44,7 @@ export default function Impressum() {
                 <div>
                   <h3 className="font-headline-md text-headline-md text-primary mb-3">Kontakt</h3>
                   <p>
-                    Telefon: +49 177 3999476<br />
+                    Telefon: +49 341 60823667<br />
                     E-Mail: info@möbelmontageleipzig.com
                   </p>
                 </div>
