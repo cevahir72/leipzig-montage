@@ -33,10 +33,22 @@ export default function Footer() {
             </p>
           </div>
           <div className="flex gap-4 mt-6">
-            <a className="text-on-surface-variant hover:text-primary transition-colors" href="#" aria-label="Instagram">
+            <a
+              className="text-on-surface-variant hover:text-primary transition-colors"
+              href="https://www.instagram.com/moebelmontageleipzig/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Instagram"
+            >
               <span className="material-symbols-outlined text-2xl">photo_camera</span>
             </a>
-            <a className="text-on-surface-variant hover:text-primary transition-colors" href="#" aria-label="LinkedIn">
+            <a
+              className="text-on-surface-variant hover:text-primary transition-colors"
+              href="https://www.facebook.com/profile.php?id=61584225530417"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Facebook"
+            >
               <span className="material-symbols-outlined text-2xl">work</span>
             </a>
           </div>
