@@ -33,15 +33,13 @@ export default function RootLayout({
           href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
           rel="stylesheet"
         />
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        <Script id="google-tag-manager" strategy="afterInteractive">
+          {`(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
 new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
 j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-TR348CK9');`,
-          }}
-        />
+})(window,document,'script','dataLayer','GTM-TR348CK9');`}
+        </Script>
       </head>
       <body className="bg-background font-body-md text-on-background min-h-screen flex flex-col">
         <noscript>
@@ -55,14 +53,18 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         {children}
         {/* Google Ads Global Site Tag (gtag.js) — AW-18232051505 */}
         <Script
+          id="google-ads-gtag-src"
           src="https://www.googletagmanager.com/gtag/js?id=AW-18232051505"
           strategy="afterInteractive"
         />
         <Script id="google-ads-gtag" strategy="afterInteractive">
           {`window.dataLayer = window.dataLayer || [];
-function gtag(){dataLayer.push(arguments);}
-gtag('js', new Date());
-gtag('config', 'AW-18232051505');`}
+window.gtag = window.gtag || function(){window.dataLayer.push(arguments);};
+if (!window.googleAdsInitialized) {
+  window.gtag('js', new Date());
+  window.gtag('config', 'AW-18232051505');
+  window.googleAdsInitialized = true;
+}`}
         </Script>
         <Script
           src="https://widgets.leadconnectorhq.com/loader.js"
